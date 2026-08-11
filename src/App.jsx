@@ -85,6 +85,176 @@ const fadeIn = {
   transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] }
 };
 
+// Data for team members
+const teamData = {
+  sampath: {
+    name: "Lingala Sampath Kumar",
+    role: "FOUNDER, AISI",
+    gender: "male",
+    img: sampathImg,
+    bio: "Dedicated to democratizing AI education and bringing world-class curriculum to every student in India.",
+    fullBio: "Coming Soon: Detailed biography and vision for AISI.",
+    highlights: ["10+ Years in Tech", "AI Evangelist", "Education Reformer"]
+  },
+  tarun: {
+    name: "Velluri Tarun Shetty",
+    role: "CEO, STRINT TECHNOLOGIES | STRATEGIC PARTNER, AISI",
+    gender: "male",
+    img: tarunImg,
+    profileLink: "https://tarunshetty.strinttechnologies.com",
+    bio: "Leading the technology and infrastructure to make interactive AI learning accessible anywhere. As CEO of Strint Technologies, Tarun drives strategic innovation and industry partnerships.",
+    fullBio: "Velluri Tarun Shetty is the CEO of Strint Technologies and a strategic partner of AISI, committed to empowering young minds with future-ready AI skills to innovate, create, and lead in the digital world.",
+    highlights: ["CEO, Strint Technologies", "Tech Visionary", "Strategic Partner"]
+  },
+  avinash: {
+    name: "Avinash",
+    role: "AI MENTOR",
+    gender: "male",
+    img: avinashImg,
+    bio: "Guiding students through hands-on practical sessions and complex algorithm implementations.",
+    fullBio: "Coming Soon: Deep dive into AI mentorship and student success stories.",
+    highlights: ["Algorithm Expert", "Student Mentor", "AI Researcher"]
+  },
+  chandana: {
+    name: "Lingala Chandana",
+    role: "ML TRAINER",
+    gender: "female",
+    img: chandanaImg,
+    bio: "Empowering the next generation of innovators by simplifying complex Machine Learning concepts into practical, hands-on learning experiences.",
+    fullBio: "Coming Soon: Journey in Machine Learning and training methodologies.",
+    highlights: ["ML Specialist", "Curriculum Design", "Practical Trainer"]
+  }
+};
+
+// Data for recognitions
+const recognitionsData = {
+  nip: {
+    title: "National Internship Portal",
+    subtitle: "Ministry of Education, Govt. of India Partnership",
+    logo: nipLogo,
+    badge: "Government Portal Alignment",
+    bgImage: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=80",
+    description: "AISI is integrated with the National Internship Portal of India to offer verified AI internships to K-12 and collegiate students. This ensures that the practical projects completed by our students are officially recognized and contribute to their academic and career profiles.",
+    howItWorks: [
+      { step: "01", title: "Enroll in AISI Programs", desc: "Students complete advanced AI modules and build practical lab portfolios." },
+      { step: "02", title: "Portal Registration", desc: "Eligible students are registered on the National Internship Portal with AISI verified credentials." },
+      { step: "03", title: "Match with Industry", desc: "Students match with official internship listings under government guidelines." },
+      { step: "04", title: "Verified Certification", desc: "Students receive a government-recognized internship certificate." }
+    ],
+    features: [
+      "Direct link with Ministry of Education systems",
+      "Verified digital portfolio submission",
+      "Access to corporate AI internships",
+      "Official credit weightage for academic profiles"
+    ],
+    stats: {
+      interns: "5,200+ Placed",
+      rating: "4.9/5",
+      partners: "120+ Companies"
+    }
+  },
+  nsdc: {
+    title: "NSDC Accreditation",
+    subtitle: "National Skill Development Corporation Alignment",
+    logo: nsdcLogo,
+    badge: "Skill India Alignment",
+    bgImage: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80",
+    description: "Our curriculum is aligned with the National Occupational Standards (NOS) set by the National Skill Development Corporation.",
+    howItWorks: [
+      { step: "01", title: "Skill Standard Mapping", desc: "Every AISI unit is mapped against NSDC guidelines for artificial intelligence." },
+      { step: "02", title: "Assessment Verification", desc: "Practical skill tests and capstones are graded using national assessment frameworks." },
+      { step: "03", title: "National Registry Listing", desc: "Certified AISI innovators get listed in the national skill repository." },
+      { step: "04", title: "Industry Recognition", desc: "Corporate HR departments recognize NSDC-aligned credentials." }
+    ],
+    features: [
+      "Alignment with IT-ITeS Sector Skill Council",
+      "National Skill Registry integration",
+      "Assessment based on Occupational Standards",
+      "Industry-verified learning outcomes"
+    ],
+    stats: {
+      interns: "15,000+ Skilled",
+      rating: "4.8/5",
+      partners: "50+ Skill Hubs"
+    }
+  },
+  aicte: {
+    title: "AICTE Integration",
+    subtitle: "All India Council for Technical Education Guidelines",
+    logo: aicteLogo,
+    badge: "Technical Education Standards",
+    bgImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=80",
+    description: "AISI works in close alignment with AICTE guidelines for technical and computing education.",
+    howItWorks: [
+      { step: "01", title: "Model Curriculum Adoption", desc: "Our lessons borrow pedagogical frameworks from AICTE guidelines." },
+      { step: "02", title: "Collaborative Labs", desc: "Students work in digital labs utilizing open-source technical libraries." },
+      { step: "03", title: "Technical Assessments", desc: "Skill tests simulate standard engineering/technical examinations." },
+      { step: "04", title: "Higher Education Leap", desc: "Graduates possess structural knowledge that aligns with AICTE institutions." }
+    ],
+    features: [
+      "AICTE model curriculum alignment",
+      "Hands-on coding labs using open standards",
+      "Focus on engineering and problem-solving pedagogy",
+      "Pathways to higher technical education"
+    ],
+    stats: {
+      interns: "8,500+ Qualified",
+      rating: "5.0/5",
+      partners: "40+ Tech Colleges"
+    }
+  },
+  msme: {
+    title: "MSME Alignment",
+    subtitle: "Ministry of Micro, Small & Medium Enterprises",
+    logo: msmeLogo,
+    badge: "Enterprise & Innovation",
+    bgImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=80",
+    description: "We encourage entrepreneurial thinking. Our integration with MSME standards supports student innovators in launching micro-startups.",
+    howItWorks: [
+      { step: "01", title: "Ideation & Capstones", desc: "Students design practical AI applications targeting local problems." },
+      { step: "02", title: "Startup Mentorship", desc: "AISI mentors guide student teams to convert prototype projects into enterprise models." },
+      { step: "03", title: "Udyam Assist", desc: "We support student teams in registering under Udyam (MSME)." },
+      { step: "04", title: "Funding & Showcases", desc: "Outstanding student startups get showcased at central MSME expos." }
+    ],
+    features: [
+      "Incubation and startup guidance",
+      "IPR and patent awareness programs",
+      "Direct exposure to MSME development schemes",
+      "Support for registering student-led micro-enterprises"
+    ],
+    stats: {
+      interns: "120+ Prototypes",
+      rating: "4.9/5",
+      partners: "15+ Incubators"
+    }
+  },
+  skillindia: {
+    title: "Skill India",
+    subtitle: "Pradhan Mantri Kaushal Vikas Yojana Standards",
+    logo: skillIndiaLogo,
+    badge: "National Skilling Mission",
+    bgImage: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80",
+    description: "Aligning with the Prime Minister's vision for a skilled nation, AISI brings specialized digital skills directly to K-12 classrooms.",
+    howItWorks: [
+      { step: "01", title: "Grassroots Skilling", desc: "Bootcamps across schools in tier-2 and tier-3 towns." },
+      { step: "02", title: "Verified Skills Assessment", desc: "Practical coding assessments to prove hands-on skills." },
+      { step: "03", title: "Skill India Digital Profile", desc: "Verified credentials linked directly to student portfolios." },
+      { step: "04", title: "Placement & Growth", desc: "Skilled youth gain access to national job portals." }
+    ],
+    features: [
+      "Integration with Skill India Digital Mission",
+      "Focus on tier-2/3 school outreach",
+      "Self-reliance and vocational AI enablement",
+      "Verified skill credentials visible nationally"
+    ],
+    stats: {
+      interns: "25,000+ Enrolled",
+      rating: "4.8/5",
+      partners: "60+ Districts"
+    }
+  }
+};
+
 // Stats Section with animated counters
   const renderStats = () => (
     <section className="stats-section" style={{ padding: 'var(--space-12) 0' }}>
@@ -184,6 +354,78 @@ function App() {
   // API Base URL - Update this after hosting the backend
   const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
+  // Certificate Search Handler
+  const handleCertVerify = async (e) => {
+    e.preventDefault();
+    if (!certId.trim()) return;
+    setCertVerifying(true);
+    setCertResult(null);
+
+    try {
+      const response = await fetch(`${API_BASE_URL}/api/certificates/verify/${certId.trim()}`);
+      const data = await response.json();
+      if (response.ok && data.found) {
+        setCertResult({ success: true, cert: data.certificate });
+      } else {
+        setCertResult({ success: false, message: data.message || 'Certificate not found.' });
+      }
+    } catch (err) {
+      setCertResult({ success: false, message: 'Server connection error. Please try again.' });
+    } finally {
+      setCertVerifying(false);
+    }
+  };
+
+  // Newsletter Subscription Handler
+  const [newsletterEmail, setNewsletterEmail] = useState('');
+  const [newsletterSubmitting, setNewsletterSubmitting] = useState(false);
+  const [newsletterStatus, setNewsletterStatus] = useState(null);
+
+  const handleNewsletterSubmit = async (e) => {
+    e.preventDefault();
+    if (!newsletterEmail.trim()) return;
+    setNewsletterSubmitting(true);
+    setNewsletterStatus(null);
+
+    try {
+      const response = await fetch(`${API_BASE_URL}/api/newsletter/subscribe`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: newsletterEmail })
+      });
+      if (response.ok) {
+        setNewsletterStatus('success');
+        setNewsletterEmail('');
+      } else {
+        setNewsletterStatus('error');
+      }
+    } catch (err) {
+      setNewsletterStatus('error');
+    } finally {
+      setNewsletterSubmitting(false);
+    }
+  };
+
+  // Admin Leads Sheet Modal State
+  const [showAdminLeadsModal, setShowAdminLeadsModal] = useState(false);
+  const [adminLeadsData, setAdminLeadsData] = useState([]);
+  const [loadingAdminLeads, setLoadingAdminLeads] = useState(false);
+
+  const fetchAdminLeads = async () => {
+    setLoadingAdminLeads(true);
+    try {
+      const response = await fetch(`${API_BASE_URL}/api/admin/all-leads`);
+      const data = await response.json();
+      if (data && data.leads) {
+        setAdminLeadsData(data.leads);
+      }
+    } catch (err) {
+      console.error('Failed to fetch admin leads:', err);
+    } finally {
+      setLoadingAdminLeads(false);
+    }
+  };
+
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem('theme', theme);
@@ -197,12 +439,92 @@ function App() {
 
   const toggleTheme = () => setTheme(prev => prev === 'light' ? 'dark' : 'light');
 
+  // Programs Filter State
+  const [activeProgramFilter, setActiveProgramFilter] = useState('all');
+
   const programs = [
-    { id: 6, title: "AI Foundations", desc: "For Class 6: AI awareness, logical thinking & digital world basics.", rating: 4.9, students: "15,200+", popular: false },
-    { id: 7, title: "AI Explorer", desc: "For Class 7: ML basics, data patterns & Scratch block coding start.", rating: 4.9, students: "12,400+", popular: true },
-    { id: 8, title: "AI Master", desc: "For Class 8: AI systems understanding & advanced block coding.", rating: 4.8, students: "8,200+", popular: false },
-    { id: 9, title: "AI Innovator", desc: "For Class 9: Python intro, real AI projects & career awareness.", rating: 5.0, students: "5,600+", popular: true }
+    {
+      id: 6,
+      grade: "Class 6",
+      level: "Beginner Level",
+      step: "STEP 01",
+      title: "AI Foundations",
+      subtitle: "AI Awareness & Computational Thinking",
+      desc: "An engaging entry into Artificial Intelligence. Students learn digital world basics, logic sequencing, and how AI thinks.",
+      rating: 4.9,
+      students: "15,200+",
+      duration: "30 Hours",
+      popular: false,
+      tags: ["AI Awareness", "Logic Building", "Digital World"],
+      highlights: [
+        "Understand Input-Process-Output AI loops",
+        "Hands-on Teachable Machine device sorting",
+        "Algorithm design for everyday problem solving"
+      ]
+    },
+    {
+      id: 7,
+      grade: "Class 7",
+      level: "Intermediate Level",
+      step: "STEP 02",
+      title: "AI Explorer",
+      subtitle: "Machine Learning & Block Coding",
+      desc: "Uncover how machines learn from patterns and data. Introduction to visual Scratch block programming and interactive games.",
+      rating: 4.9,
+      students: "12,400+",
+      duration: "40 Hours",
+      popular: true,
+      tags: ["ML Models", "Data Patterns", "Scratch Coding"],
+      highlights: [
+        "Train image & audio prediction models",
+        "Computational thinking & IF-THEN logic",
+        "Build first interactive Scratch AI game"
+      ]
+    },
+    {
+      id: 8,
+      grade: "Class 8",
+      level: "Advanced Level",
+      step: "STEP 03",
+      title: "AI Master",
+      subtitle: "Computer Vision & Advanced AI Systems",
+      desc: "Deep dive into Computer Vision and NLP. Build multi-level Scratch games with dynamic variables, scoring, and AI safety awareness.",
+      rating: 4.8,
+      students: "8,200+",
+      duration: "50 Hours",
+      popular: false,
+      tags: ["Computer Vision", "NLP Basics", "AI Ethics"],
+      highlights: [
+        "Gesture recognition & camera vision labs",
+        "Variables, loops & complex game physics",
+        "Spotting Deepfakes & digital safety ethics"
+      ]
+    },
+    {
+      id: 9,
+      grade: "Class 9",
+      level: "Expert Level",
+      step: "STEP 04",
+      title: "AI Innovator",
+      subtitle: "Python Programming & Capstone AI Projects",
+      desc: "Bridge block coding to real Python programming. Build working AI projects, chatbots, and present solutions for real-world problems.",
+      rating: 5.0,
+      students: "5,600+",
+      duration: "60 Hours",
+      popular: true,
+      tags: ["Python Coding", "Chatbot Dev", "Capstones"],
+      highlights: [
+        "Core Python syntax, variables & functions",
+        "Community problem-solving with AI framing",
+        "Final Capstone Project Showcase to judges"
+      ]
+    }
   ];
+
+  const filteredPrograms = programs.filter(p => {
+    if (activeProgramFilter === 'all') return true;
+    return p.id === activeProgramFilter;
+  });
 
   const syllabusData = {
     6: {
@@ -367,7 +689,7 @@ function App() {
     return (
       <div className="member-detail">
         <section className="page-hero" style={{ 
-          background: `linear-gradient(135deg, rgba(30, 64, 175, 0.7) 0%, rgba(37, 99, 235, 0.65) 100%), url(https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=80)`, 
+          background: `linear-gradient(135deg, rgba(16, 185, 129, 0.85) 0%, rgba(5, 150, 105, 0.8) 100%), url(https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=80)`, 
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: 'white', 
@@ -435,13 +757,13 @@ function App() {
                       alignItems: 'center',
                       gap: '8px',
                       padding: '12px 28px',
-                      background: 'linear-gradient(135deg, #2563EB 0%, #3B72F7 100%)',
+                      background: 'linear-gradient(135deg, #10B981 0%, #059669 100%)',
                       color: 'white',
                       borderRadius: '9999px',
                       textDecoration: 'none',
                       fontWeight: '700',
                       fontSize: '14px',
-                      boxShadow: '0 4px 16px rgba(37,99,235,0.4)',
+                      boxShadow: '0 4px 16px rgba(16,185,129,0.4)',
                       fontFamily: 'Inter, sans-serif'
                     }}
                   >
@@ -516,7 +838,7 @@ function App() {
         </motion.div>
 
         {/* Desktop Nav */}
-        <div className="nav-links desktop-only" style={{ display: 'flex', gap: '32px', alignItems: 'center' }}>
+        <div className="nav-links desktop-only" style={{ display: 'flex', gap: '28px', alignItems: 'center' }}>
           {['home', 'about', 'programs', 'curriculum', 'workshops', 'recognitions', 'contact'].map(page => (
             <a 
               key={page} 
@@ -529,10 +851,14 @@ function App() {
                 fontWeight: '700',
                 fontSize: '15px',
                 textTransform: 'capitalize',
-                transition: 'color 0.3s ease'
+                transition: 'color 0.3s ease',
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '4px'
               }}
             >
-              {page === 'home' ? 'Home' : page === 'about' ? 'About Us' : page === 'curriculum' ? 'Curriculum' : page}
+              <span>{page === 'home' ? 'Home' : page === 'about' ? 'About Us' : page === 'curriculum' ? 'Curriculum' : page}</span>
+              <ChevronDown size={14} style={{ opacity: 0.7, transition: 'transform 0.2s ease' }} />
             </a>
           ))}
           
@@ -545,12 +871,17 @@ function App() {
           </button>
 
           <motion.button
-            className="btn btn-primary btn-glow"
+            className="btn btn-primary btn-glow btn-down-arrow"
             onClick={() => navigateTo('contact')}
             whileHover={{ scale: 1.06, y: -4 }}
             whileTap={{ scale: 0.96 }}
-            style={{ padding: '12px 32px', fontSize: '15px', fontWeight: 700, background: 'linear-gradient(135deg, #2563EB 0%, #3B72F7 100%)' }}
-          >Join Now</motion.button>
+            style={{ padding: '12px 28px', fontSize: '15px', fontWeight: 700, background: 'linear-gradient(135deg, #332D27 0%, #241F1A 100%)', borderRadius: '50px', color: '#F9F7F2' }}
+          >
+            <span>Join Now</span>
+            <span className="arrow-icon hero-arrow-bounce">
+              <ChevronDown size={18} />
+            </span>
+          </motion.button>
         </div>
 
         {/* Mobile Toggle & Theme Toggle */}
@@ -599,101 +930,29 @@ function App() {
               key={page} 
               href="#" 
               onClick={(e) => { e.preventDefault(); navigateTo(page); }}
-              style={{ textDecoration: 'none', color: 'var(--navy)', fontWeight: '800', fontSize: '20px' }}
+              style={{ textDecoration: 'none', color: 'var(--navy)', fontWeight: '800', fontSize: '20px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}
             >
-              {page === 'home' ? 'Home' : page === 'about' ? 'About Us' : page.toUpperCase()}
+              <span>{page === 'home' ? 'Home' : page === 'about' ? 'About Us' : page.toUpperCase()}</span>
+              <ChevronDown size={18} />
             </a>
           ))}
           <motion.button 
-            className="btn btn-primary btn-glow" 
+            className="btn btn-primary btn-glow btn-down-arrow" 
             onClick={() => navigateTo('contact')} 
-            style={{ padding: '16px 40px', fontSize: '15px', fontWeight: 700, background: 'linear-gradient(135deg, #2563EB 0%, #3B72F7 100%)', width: '100%' }}
+            style={{ padding: '16px 40px', fontSize: '15px', fontWeight: 700, background: 'linear-gradient(135deg, #332D27 0%, #241F1A 100%)', width: '100%', borderRadius: '50px', color: '#F9F7F2' }}
             whileHover={{ scale: 1.04, y: -2 }}
             whileTap={{ scale: 0.97 }}
           >
-            Get Started
+            <span>Get Started</span>
+            <span className="arrow-icon hero-arrow-bounce">
+              <ChevronDown size={18} />
+            </span>
           </motion.button>
         </motion.div>
       )}
     </nav>
   );
 
-  const heroSlides = [
-    {
-      image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1920&q=90",
-      alt: "Students collaborating in AI classroom",
-      tag: "🚀 AI Education Revolution",
-      heading: "Bringing the Future",
-      headingAccent: "Into Your Hands",
-      sub: "Artificial Intelligence Society India (AISI) is on a mission to democratize AI literacy for every K-12 student in India."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1920&q=90",
-      alt: "Interactive AI workshop session",
-      tag: "🧠 Hands-On Learning",
-      heading: "Real Workshops,",
-      headingAccent: "Real Impact",
-      sub: "Over 1,500 workshops conducted across Andhra Pradesh — students don't just learn AI, they build it."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1920&q=90",
-      alt: "Robotics and AI innovation",
-      tag: "🤖 Innovation Lab",
-      heading: "Build Robots,",
-      headingAccent: "Shape Tomorrow",
-      sub: "From robotics to neural networks — our students create cutting-edge AI projects that solve real problems."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=90",
-      alt: "Technology and programming education",
-      tag: "💻 Code & Create",
-      heading: "Learn Python,",
-      headingAccent: "Master AI",
-      sub: "Structured coding programs from Class 6 to 9 — turning curious students into confident AI developers."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1920&q=90",
-      alt: "Students engaged in group learning",
-      tag: "🏆 25,000+ Certified",
-      heading: "Join India's Largest",
-      headingAccent: "AI Community",
-      sub: "25,000+ students certified. 30+ partners. 12+ programs. Be part of the movement changing education forever."
-    }
-  ];
-
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [autoPlayProgress, setAutoPlayProgress] = useState(0);
-
-  useEffect(() => {
-    if (currentPage !== 'home') return;
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev === heroSlides.length - 1 ? 0 : prev + 1));
-      setAutoPlayProgress(0);
-    }, 5000); // Auto slide every 5 seconds
-    
-    const progressInterval = setInterval(() => {
-      setAutoPlayProgress((prev) => (prev >= 100 ? 0 : prev + 2));
-    }, 100);
-    
-    return () => {
-      clearInterval(interval);
-      clearInterval(progressInterval);
-    };
-  }, [currentPage, heroSlides.length]);
-
-  // Keyboard Navigation (Accessibility)
-  useEffect(() => {
-    const handleKeyPress = (e) => {
-      if (currentPage !== 'home') return;
-      if (e.key === 'ArrowLeft') prevSlide();
-      if (e.key === 'ArrowRight') nextSlide();
-    };
-    window.addEventListener('keydown', handleKeyPress);
-    return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [currentPage]);
-
-  const nextSlide = () => setCurrentSlide(prev => (prev === heroSlides.length - 1 ? 0 : prev + 1));
-  const prevSlide = () => setCurrentSlide(prev => (prev === 0 ? heroSlides.length - 1 : prev - 1));
 
   const handleContactSubmit = async (e) => {
     e.preventDefault();
@@ -709,6 +968,18 @@ function App() {
       
       if (response.ok) {
         setSubmitStatus('success');
+        // Trigger Instant WhatsApp Message with Lead Details
+        const adminWhatsAppNumber = "918639083094";
+        let text = `🚨 *NEW AISI CONTACT INQUIRY*\n\n`;
+        text += `👤 *Name:* ${contactForm.name}\n`;
+        text += `📧 *Email:* ${contactForm.email}\n`;
+        if (contactForm.school) text += `📞 *Phone/School:* ${contactForm.school}\n`;
+        if (contactForm.message) text += `💬 *Message:* ${contactForm.message}\n`;
+        text += `\n📅 *Time:* ${new Date().toLocaleString('en-IN')}`;
+
+        const waUrl = `https://wa.me/${adminWhatsAppNumber}?text=${encodeURIComponent(text)}`;
+        window.open(waUrl, '_blank');
+
         setContactForm({ name: '', email: '', school: '', message: '' });
       } else {
         setSubmitStatus('error');
@@ -719,164 +990,445 @@ function App() {
       setIsSubmitting(false);
     }
   };
-  const renderHome = () => (
-    <>
-      <header className="hero-banner">
-        {/* Glowing Progress Bar */}
-        <div className="hero-progress" style={{ width: `${autoPlayProgress}%` }} />
 
-        {/* Floating Particles */}
-        <div className="hero-particles">
-          {[...Array(8)].map((_, i) => <div key={i} className="hero-particle" />)}
-        </div>
+  // Inbuilt Video Player Component for Hero Section (Auto-Moving Premium Classroom Footage)
+  const HeroInbuiltVideo = () => {
+    const slides = [
+      {
+        url: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1200&q=80",
+        title: "Hands-on AI Lab & Coding Session",
+        tag: "Interactive Classroom"
+      },
+      {
+        url: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80",
+        title: "K-12 Robotics & Practical Machine Learning",
+        tag: "Robotics Workshop"
+      },
+      {
+        url: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80",
+        title: "AI Workshops across Andhra Pradesh Schools",
+        tag: "School Innovation"
+      },
+      {
+        url: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80",
+        title: "Student Project Capstone & Chatbot Demos",
+        tag: "Student Showcase"
+      },
+      {
+        url: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80",
+        title: "Empowering Next-Gen Tech Leaders in India",
+        tag: "National Skilling"
+      }
+    ];
 
-        {/* Cinematic Ken Burns Slides */}
-        {heroSlides.map((slide, index) => (
-          <div
-            key={index}
-            className={`hero-slide${currentSlide === index ? ' active' : ''}`}
-            style={{ opacity: currentSlide === index ? 1 : 0 }}
-            aria-hidden={currentSlide !== index}
-          >
-            <div
-              className="hero-slide-bg"
-              style={{ backgroundImage: `url(${slide.image})` }}
-              role="img"
-              aria-label={slide.alt}
-            />
-            <div className="hero-slide-overlay" />
-          </div>
-        ))}
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [isPlaying, setIsPlaying] = useState(true);
+    const [progress, setProgress] = useState(0);
 
-        {/* Premium Arrow: Previous */}
-        <button
-          className="hero-arrow hero-arrow--prev"
-          onClick={prevSlide}
-          onKeyDown={(e) => { if (e.key === 'Enter') prevSlide(); }}
-          aria-label="Previous slide"
-          tabIndex={0}
-        >
-          <ChevronLeft />
-        </button>
+    useEffect(() => {
+      let interval;
+      let progressInterval;
 
-        {/* Premium Arrow: Next */}
-        <button
-          className="hero-arrow hero-arrow--next"
-          onClick={nextSlide}
-          onKeyDown={(e) => { if (e.key === 'Enter') nextSlide(); }}
-          aria-label="Next slide"
-          tabIndex={0}
-        >
-          <ChevronRight />
-        </button>
+      if (isPlaying) {
+        setProgress(0);
+        const startTime = Date.now();
+        const duration = 3500; // 3.5s per slide
 
-        {/* Hero Content */}
-        <div className="container" style={{ position: 'relative', zIndex: 5, width: '100%' }}>
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={currentSlide}
-              initial={{ opacity: 0, y: 40, x: -20 }}
-              animate={{ opacity: 1, y: 0, x: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-              style={{ maxWidth: '820px', color: 'white' }}
+        progressInterval = setInterval(() => {
+          const elapsed = Date.now() - startTime;
+          const pct = Math.min((elapsed / duration) * 100, 100);
+          setProgress(pct);
+        }, 50);
+
+        interval = setInterval(() => {
+          setCurrentIndex((prev) => (prev + 1) % slides.length);
+          setProgress(0);
+        }, duration);
+      }
+
+      return () => {
+        clearInterval(interval);
+        clearInterval(progressInterval);
+      };
+    }, [isPlaying, currentIndex, slides.length]);
+
+    const handleNext = () => {
+      setCurrentIndex((prev) => (prev + 1) % slides.length);
+      setProgress(0);
+    };
+
+    const handlePrev = () => {
+      setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length);
+      setProgress(0);
+    };
+
+    return (
+      <div className="hero-video-wrapper" style={{ position: 'relative', width: '100%' }}>
+        <div style={{
+          position: 'relative',
+          borderRadius: '28px',
+          padding: '6px',
+          background: 'linear-gradient(135deg, #332D27 0%, #BAA892 50%, #241F1A 100%)',
+          boxShadow: '0 20px 50px rgba(51, 45, 39, 0.25)',
+          overflow: 'hidden'
+        }}>
+          <div style={{
+            position: 'relative',
+            borderRadius: '22px',
+            overflow: 'hidden',
+            background: '#1F1A16',
+            aspectRatio: '16/9'
+          }}>
+            {/* Continuous Moving Slide Image Animation */}
+            <AnimatePresence>
+              <motion.div
+                key={currentIndex}
+                initial={{ opacity: 0, scale: 1.05 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.98 }}
+                transition={{ duration: 1.0, ease: 'easeInOut' }}
+                style={{ width: '100%', height: '100%', position: 'absolute', inset: 0 }}
+              >
+                <img
+                  src={slides[currentIndex].url}
+                  alt={slides[currentIndex].title}
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    display: 'block',
+                    filter: 'brightness(0.9) contrast(1.05)'
+                  }}
+                />
+                <div style={{
+                  position: 'absolute',
+                  inset: 0,
+                  background: 'linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.05) 50%, rgba(0,0,0,0.6) 100%)'
+                }}></div>
+              </motion.div>
+            </AnimatePresence>
+
+            {/* Left & Right Slide Arrows */}
+            <button
+              onClick={handlePrev}
+              style={{
+                position: 'absolute',
+                left: '12px',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                width: '38px',
+                height: '38px',
+                borderRadius: '50%',
+                background: 'rgba(31, 26, 22, 0.75)',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+                color: '#F9F7F2',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                cursor: 'pointer',
+                zIndex: 12,
+                backdropFilter: 'blur(8px)'
+              }}
             >
-              {/* Slide Tag Badge */}
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.05, duration: 0.5 }}
-                style={{ display: 'inline-flex', alignItems: 'center', gap: '10px', marginBottom: '22px', background: 'rgba(255,255,255,0.07)', padding: '9px 20px', borderRadius: '50px', backdropFilter: 'blur(16px)', border: '1px solid rgba(255,255,255,0.18)', boxShadow: '0 4px 24px rgba(0,0,0,0.25)' }}
-              >
-                <span style={{ fontWeight: '700', fontSize: '13px', color: 'rgba(255,255,255,0.95)', letterSpacing: '0.5px' }}>{heroSlides[currentSlide].tag}</span>
-              </motion.div>
+              <ChevronLeft size={20} />
+            </button>
 
-              {/* Dynamic Heading per slide */}
-              <motion.h1
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.12, duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
-                style={{ fontFamily: 'Poppins, sans-serif', fontSize: 'clamp(36px, 5.5vw, 72px)', lineHeight: '1.08', fontWeight: 900, marginBottom: '20px', letterSpacing: '-0.03em', textShadow: '0 4px 32px rgba(0,0,0,0.5)', color: 'white' }}
-              >
-                {heroSlides[currentSlide].heading} <br />
-                <span style={{ fontFamily: 'Space Grotesk, sans-serif', background: 'linear-gradient(135deg, #60A5FA 0%, #06B6D4 50%, #818CF8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text', fontWeight: 800 }}>{heroSlides[currentSlide].headingAccent}</span>
-              </motion.h1>
+            <button
+              onClick={handleNext}
+              style={{
+                position: 'absolute',
+                right: '12px',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                width: '38px',
+                height: '38px',
+                borderRadius: '50%',
+                background: 'rgba(31, 26, 22, 0.75)',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+                color: '#F9F7F2',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                cursor: 'pointer',
+                zIndex: 12,
+                backdropFilter: 'blur(8px)'
+              }}
+            >
+              <ChevronRight size={20} />
+            </button>
 
-              {/* Dynamic Subtext per slide */}
-              <motion.p
-                initial={{ opacity: 0, y: 18 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.22, duration: 0.6 }}
-                style={{ fontFamily: 'Inter, sans-serif', fontSize: 'clamp(15px, 1.8vw, 18px)', color: 'rgba(255,255,255,0.88)', marginBottom: '40px', lineHeight: '1.75', maxWidth: '540px', fontWeight: 400, textShadow: '0 2px 12px rgba(0,0,0,0.5)' }}
-              >
-                {heroSlides[currentSlide].sub}
-              </motion.p>
+            {/* Center Play/Pause Overlay */}
+            <div
+              onClick={() => setIsPlaying(!isPlaying)}
+              style={{
+                position: 'absolute',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                width: '64px',
+                height: '64px',
+                borderRadius: '50%',
+                background: 'rgba(51, 45, 39, 0.85)',
+                backdropFilter: 'blur(10px)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: '#F9F7F2',
+                cursor: 'pointer',
+                boxShadow: '0 0 30px rgba(51, 45, 39, 0.5)',
+                transition: 'all 0.3s ease',
+                zIndex: 10,
+                opacity: isPlaying ? 0.3 : 1
+              }}
+              onMouseEnter={(e) => e.currentTarget.style.opacity = '1'}
+              onMouseLeave={(e) => e.currentTarget.style.opacity = isPlaying ? '0.3' : '1'}
+            >
+              {isPlaying ? (
+                <div style={{ display: 'flex', gap: '5px' }}>
+                  <div style={{ width: '5px', height: '18px', background: '#F9F7F2', borderRadius: '2px' }}></div>
+                  <div style={{ width: '5px', height: '18px', background: '#F9F7F2', borderRadius: '2px' }}></div>
+                </div>
+              ) : (
+                <div style={{ width: 0, height: 0, borderTop: '9px solid transparent', borderBottom: '9px solid transparent', borderLeft: '16px solid #F9F7F2', marginLeft: '4px' }}></div>
+              )}
+            </div>
 
-              {/* Fixed Partner Badge below subtext */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.3, duration: 0.5 }}
-                style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', marginBottom: '32px', background: 'rgba(0,0,0,0.3)', padding: '7px 18px', borderRadius: '50px', backdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.1)' }}
+            {/* Video Controls Bar */}
+            <div style={{
+              position: 'absolute',
+              bottom: 0,
+              left: 0,
+              right: 0,
+              background: 'linear-gradient(0deg, rgba(31, 26, 22, 0.95) 0%, transparent 100%)',
+              padding: '16px 14px 12px 14px',
+              zIndex: 10
+            }}>
+              <div
+                style={{
+                  width: '100%',
+                  height: '4px',
+                  background: 'rgba(255, 255, 255, 0.2)',
+                  borderRadius: '10px',
+                  marginBottom: '10px',
+                  overflow: 'hidden'
+                }}
               >
-                <div style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#22C55E', boxShadow: '0 0 8px #22C55E', flexShrink: 0 }} />
-                <span style={{ color: '#93C5FD', fontWeight: '700', textTransform: 'uppercase', fontSize: '11px', letterSpacing: '1.5px' }}>Strategic Partner:</span>
-                <a href="https://strinttechnologies.com/" target="_blank" rel="noreferrer" style={{ fontWeight: '800', fontSize: '11px', color: 'white', textDecoration: 'none', letterSpacing: '0.5px' }}>STRINT TECHNOLOGIES</a>
-              </motion.div>
+                <div style={{
+                  height: '100%',
+                  width: `${progress}%`,
+                  background: 'linear-gradient(90deg, #BAA892, #332D27)',
+                  borderRadius: '10px',
+                  transition: 'width 0.05s linear'
+                }}></div>
+              </div>
 
-              {/* CTA Buttons */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.35, duration: 0.6 }}
-                style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', alignItems: 'center' }}
-              >
-                <motion.button
-                  className="btn btn-primary btn-glow btn-pulse"
-                  onClick={() => navigateTo('contact')}
-                  whileHover={{ scale: 1.06, y: -4 }}
-                  whileTap={{ scale: 0.96 }}
-                  style={{ padding: 'clamp(13px, 2vw, 18px) clamp(32px, 4vw, 52px)', fontSize: 'clamp(14px, 1.5vw, 17px)', fontWeight: 800, background: 'linear-gradient(135deg, #2563EB 0%, #3B72F7 60%, #06B6D4 100%)', boxShadow: '0 8px 32px rgba(37,99,235,0.5)', border: 'none' }}
-                >
-                  Get Started Free <ArrowRight size={20} />
-                </motion.button>
-                <motion.button
-                  onClick={() => navigateTo('programs')}
-                  whileHover={{ scale: 1.06, y: -4 }}
-                  whileTap={{ scale: 0.96 }}
-                  style={{ padding: 'clamp(13px, 2vw, 18px) clamp(28px, 4vw, 44px)', fontSize: 'clamp(14px, 1.5vw, 17px)', border: '2px solid rgba(255,255,255,0.35)', color: 'white', background: 'rgba(255,255,255,0.08)', backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)', fontWeight: 700, borderRadius: '9999px', cursor: 'pointer', fontFamily: 'Inter, sans-serif', display: 'inline-flex', alignItems: 'center', gap: '8px' }}
-                >
-                  View Curriculum
-                </motion.button>
-              </motion.div>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', color: '#F9F7F2', fontSize: '12px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+                  <button
+                    onClick={() => setIsPlaying(!isPlaying)}
+                    style={{ background: 'none', border: 'none', color: '#F9F7F2', cursor: 'pointer', fontSize: '13px', fontWeight: 700 }}
+                  >
+                    {isPlaying ? '⏸ Pause Video' : '▶ Play Video'}
+                  </button>
+                  <span style={{ color: '#BAA892', fontSize: '12px', fontWeight: 700 }}>
+                    {slides[currentIndex].title}
+                  </span>
+                </div>
 
-              {/* Dots + Counter Row */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.5, duration: 0.6 }}
-                style={{ display: 'flex', alignItems: 'center', gap: '20px', marginTop: '56px' }}
-              >
-                <div className="hero-dots">
-                  {heroSlides.map((_, idx) => (
-                    <button
+                <div style={{ display: 'flex', gap: '6px' }}>
+                  {slides.map((_, idx) => (
+                    <div
                       key={idx}
-                      className={`hero-dot${currentSlide === idx ? ' active' : ''}`}
-                      onClick={() => { setCurrentSlide(idx); setAutoPlayProgress(0); }}
-                      aria-label={`Go to slide ${idx + 1}`}
+                      onClick={() => { setCurrentIndex(idx); setProgress(0); }}
+                      style={{
+                        width: idx === currentIndex ? '18px' : '6px',
+                        height: '6px',
+                        borderRadius: '3px',
+                        background: idx === currentIndex ? '#BAA892' : 'rgba(255,255,255,0.3)',
+                        cursor: 'pointer',
+                        transition: 'all 0.3s ease'
+                      }}
                     />
                   ))}
                 </div>
-                <div className="hero-slide-counter">
-                  <span className="current">{String(currentSlide + 1).padStart(2, '0')}</span>
-                  <span style={{ margin: '0 4px', opacity: 0.4 }}>/</span>
-                  <span>{String(heroSlides.length).padStart(2, '0')}</span>
-                </div>
-              </motion.div>
-            </motion.div>
-          </AnimatePresence>
+              </div>
+            </div>
+          </div>
         </div>
-      </header>
+
+        <div style={{
+          marginTop: '16px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          padding: '12px 20px',
+          background: 'var(--bg-card)',
+          borderRadius: '16px',
+          border: '1px solid var(--border)',
+          boxShadow: 'var(--shadow-sm)'
+        }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+            <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: 'rgba(186, 168, 146, 0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--primary)' }}>
+              <Award size={18} />
+            </div>
+            <div>
+              <div style={{ fontSize: '13px', fontWeight: 800, color: 'var(--navy)' }}>Inbuilt Video Showcase</div>
+              <div style={{ fontSize: '11px', color: 'var(--text-dim)' }}>Watch AISI interactive AI classroom moving slides</div>
+            </div>
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', fontWeight: 700, color: 'var(--primary)' }}>
+            <CheckCircle2 size={16} /> Auto-Moving Showcase
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  const renderHome = () => (
+    <>
+      {/* ===== HERO SECTION WITH ORGANISATION DETAILS LEFT & INBUILT VIDEO RIGHT ===== */}
+      <section style={{
+        padding: '70px 0 90px',
+        background: 'radial-gradient(circle at 10% 20%, rgba(186, 168, 146, 0.12) 0%, transparent 50%), radial-gradient(circle at 90% 80%, rgba(51, 45, 39, 0.05) 0%, transparent 50%), var(--bg-main)',
+        borderBottom: '1px solid var(--border)',
+        position: 'relative',
+        overflow: 'hidden'
+      }}>
+        <div className="container">
+          <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '50px', alignItems: 'center' }}>
+            
+            {/* LEFT SIDE: ORGANISATION DETAILS */}
+            <motion.div {...fadeIn} style={{ display: 'flex', flexDirection: 'column', gap: '22px' }}>
+              
+              {/* Org Badge */}
+              <div style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '10px',
+                background: 'rgba(186, 168, 146, 0.2)',
+                border: '1px solid var(--border-strong)',
+                padding: '8px 18px',
+                borderRadius: '50px',
+                width: 'fit-content'
+              }}>
+                <ShieldCheck size={18} color="var(--primary)" />
+                <span style={{ fontSize: '12px', fontWeight: '800', color: 'var(--primary)', letterSpacing: '1.5px', textTransform: 'uppercase' }}>
+                  ARTIFICIAL INTELLIGENCE SOCIETY INDIA
+                </span>
+              </div>
+
+              {/* Strategic Partner Info (Working Strint Technologies Link) */}
+              <div style={{ fontSize: '13px', fontWeight: '700', color: 'var(--text-dim)', display: 'flex', alignItems: 'center', gap: '10px', flexWrap: 'wrap' }}>
+                <span>POWERED BY:</span>
+                <a
+                  href="https://strinttechnologies.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ color: 'var(--primary)', fontWeight: '900', letterSpacing: '0.5px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '4px' }}
+                >
+                  <span>STRINT TECHNOLOGIES</span>
+                  <ArrowRight size={14} />
+                </a>
+                <span style={{ background: 'rgba(186, 168, 146, 0.2)', color: 'var(--navy)', padding: '3px 10px', borderRadius: '20px', fontSize: '11px', fontWeight: 800, border: '1px solid var(--border)' }}>
+                  Govt. Recognized
+                </span>
+              </div>
+
+              {/* Title Headline */}
+              <h1 style={{
+                fontFamily: 'Poppins, sans-serif',
+                fontSize: 'clamp(32px, 4.2vw, 54px)',
+                fontWeight: 900,
+                lineHeight: 1.15,
+                color: 'var(--navy)',
+                margin: 0
+              }}>
+                Democratizing <span style={{
+                  background: 'linear-gradient(135deg, #332D27 0%, #BAA892 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent'
+                }}>AI Education</span> for Every School in India
+              </h1>
+
+              {/* Paragraph */}
+              <p style={{ fontSize: '17px', color: 'var(--text-dim)', lineHeight: '1.75', margin: 0, maxWidth: '600px' }}>
+                AISI bridges the tech divide by equipping K-12 students with hands-on Machine Learning, Python programming, and Computational Logic. Aligned with national skill standards.
+              </p>
+
+              {/* Key Quick Organisation Highlights */}
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', margin: '6px 0' }}>
+                <div style={{ padding: '10px 16px', background: 'var(--bg-card)', borderRadius: '14px', border: '1px solid var(--border)', display: 'flex', alignItems: 'center', gap: '10px', boxShadow: 'var(--shadow-sm)' }}>
+                  <Users size={20} color="var(--primary)" />
+                  <span style={{ fontSize: '13px', fontWeight: 800, color: 'var(--navy)' }}>25,000+ Students</span>
+                </div>
+                <div style={{ padding: '10px 16px', background: 'var(--bg-card)', borderRadius: '14px', border: '1px solid var(--border)', display: 'flex', alignItems: 'center', gap: '10px', boxShadow: 'var(--shadow-sm)' }}>
+                  <GraduationCap size={20} color="var(--accent)" />
+                  <span style={{ fontSize: '13px', fontWeight: 800, color: 'var(--navy)' }}>12+ Programs</span>
+                </div>
+                <div style={{ padding: '10px 16px', background: 'var(--bg-card)', borderRadius: '14px', border: '1px solid var(--border)', display: 'flex', alignItems: 'center', gap: '10px', boxShadow: 'var(--shadow-sm)' }}>
+                  <Award size={20} color="var(--primary)" />
+                  <span style={{ fontSize: '13px', fontWeight: 800, color: 'var(--navy)' }}>Govt. Aligned</span>
+                </div>
+              </div>
+
+              {/* Action Buttons with Stronger Visual Emphasis & Micro-interactions */}
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', marginTop: '14px' }}>
+                <motion.button
+                  className="btn btn-primary btn-glow btn-down-arrow"
+                  onClick={() => navigateTo('programs')}
+                  whileHover={{ scale: 1.06, y: -4, boxShadow: '0 14px 36px rgba(51, 45, 39, 0.45)' }}
+                  whileTap={{ scale: 0.95 }}
+                  style={{
+                    padding: '18px 42px',
+                    fontSize: '17px',
+                    fontWeight: 800,
+                    background: 'linear-gradient(135deg, #332D27 0%, #241F1A 100%)',
+                    boxShadow: '0 10px 28px rgba(51, 45, 39, 0.35)',
+                    borderRadius: '50px',
+                    color: '#F9F7F2',
+                    border: '2px solid rgba(186, 168, 146, 0.4)'
+                  }}
+                >
+                  <Rocket size={20} />
+                  <span>Explore AI Curriculum</span>
+                  <span className="arrow-icon hero-arrow-bounce">
+                    <ChevronDown size={20} />
+                  </span>
+                </motion.button>
+
+                <motion.button
+                  className="btn btn-outline btn-down-arrow"
+                  onClick={() => navigateTo('contact')}
+                  whileHover={{ scale: 1.05, y: -3, background: 'rgba(186, 168, 146, 0.15)' }}
+                  whileTap={{ scale: 0.95 }}
+                  style={{
+                    padding: '18px 36px',
+                    fontSize: '16px',
+                    fontWeight: 700,
+                    borderRadius: '50px',
+                    borderColor: 'var(--primary)',
+                    color: 'var(--navy)',
+                    background: 'var(--bg-card)'
+                  }}
+                >
+                  <span>Join AISI Mission</span>
+                  <span className="arrow-icon hero-arrow-bounce">
+                    <ChevronDown size={20} />
+                  </span>
+                </motion.button>
+              </div>
+
+            </motion.div>
+
+            {/* RIGHT SIDE: INBUILT VIDEO ASSETS */}
+            <motion.div {...fadeIn} transition={{ delay: 0.2 }}>
+              <HeroInbuiltVideo />
+            </motion.div>
+
+          </div>
+        </div>
+      </section>
 
       {/* ===== RECOGNITIONS LOGO STRIP ON LANDING PAGE ===== */}
       <section style={{
@@ -912,9 +1464,9 @@ function App() {
             {...fadeIn}
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(5, 1fr)',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
               gap: '24px',
-              maxWidth: '1100px',
+              maxWidth: '1200px',
               margin: '0 auto'
             }}
             className="recognitions-grid"
@@ -925,12 +1477,12 @@ function App() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.12, duration: 0.5 }}
-                whileHover={{ scale: 1.08, y: -10, boxShadow: '0 20px 40px rgba(0,101,255,0.15)' }}
+                transition={{ delay: i * 0.1, duration: 0.4 }}
+                whileHover={{ scale: 1.05, y: -8, boxShadow: '0 20px 40px rgba(51,45,39,0.15)' }}
                 onClick={() => navigateTo('recognition-detail', key)}
                 style={{
                   cursor: 'pointer',
-                  padding: '28px 20px',
+                  padding: '24px 16px',
                   background: 'var(--bg-card)',
                   borderRadius: '24px',
                   border: '2px solid var(--border)',
@@ -940,44 +1492,34 @@ function App() {
                   alignItems: 'center',
                   justifyContent: 'center',
                   gap: '16px',
-                  minHeight: '160px',
-                  transition: 'all 0.35s cubic-bezier(0.4, 0, 0.2, 1)',
+                  minHeight: '170px',
+                  transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
                   position: 'relative',
                   overflow: 'hidden'
                 }}
               >
-                {/* Subtle gradient overlay on hover */}
                 <div style={{
-                  position: 'absolute',
-                  inset: 0,
-                  background: 'linear-gradient(180deg, transparent 60%, rgba(0,101,255,0.03) 100%)',
-                  borderRadius: '22px',
-                  pointerEvents: 'none'
-                }}></div>
-
-                <div style={{
-                  width: '80px',
-                  height: '80px',
+                  width: '84px',
+                  height: '84px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  background: 'white',
+                  background: '#FFFFFF',
                   borderRadius: '50%',
-                  border: '2px solid #f0f4ff',
-                  boxShadow: '0 4px 12px rgba(0,0,0,0.06)',
+                  border: '3px solid rgba(186, 168, 146, 0.3)',
+                  boxShadow: '0 6px 18px rgba(0,0,0,0.08)',
                   position: 'relative',
-                  zIndex: 1
+                  zIndex: 1,
+                  padding: '8px'
                 }}>
                   <img
                     src={recognitionsData[key].logo}
                     alt={recognitionsData[key].title}
                     loading="lazy"
                     style={{
-                      height: '50px',
-                      maxWidth: '60px',
-                      objectFit: 'contain',
-                      filter: theme === 'dark' ? 'brightness(1.3) contrast(1.1)' : 'none',
-                      transition: 'filter 0.3s ease'
+                      height: '52px',
+                      maxWidth: '65px',
+                      objectFit: 'contain'
                     }}
                   />
                 </div>
@@ -1094,45 +1636,296 @@ function App() {
         </div>
       </section>
 
-      <section className="container section">
-        <motion.div className="section-header" {...fadeIn}>
-          <span className="eyebrow">OUR PROGRAMS</span>
-          <h2 style={{ fontFamily: 'Poppins, sans-serif', fontSize: 'clamp(28px, 4vw, 48px)', fontWeight: 900, marginTop: '12px' }}>A Curriculum for Tomorrow</h2>
-          <p>Join the ranks of thousands of students mastering Artificial Intelligence through our structured, practical roadmap.</p>
+      {/* ===== OUR PROGRAMS / A CURRICULUM FOR TOMORROW ===== */}
+      <section className="container section" style={{ position: 'relative', padding: '90px 0 100px' }}>
+        {/* Background Subtle Warm Radial Glow */}
+        <div style={{
+          position: 'absolute',
+          top: '20%',
+          left: '-5%',
+          width: '500px',
+          height: '500px',
+          background: 'radial-gradient(circle, rgba(186, 168, 146, 0.12) 0%, transparent 70%)',
+          pointerEvents: 'none',
+          zIndex: 0
+        }}></div>
+
+        <motion.div className="section-header" {...fadeIn} style={{ position: 'relative', zIndex: 1, textAlign: 'center', maxWidth: '820px', margin: '0 auto 50px' }}>
+          <div style={{
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: '10px',
+            background: 'rgba(186, 168, 146, 0.2)',
+            border: '1px solid var(--border-strong)',
+            padding: '8px 20px',
+            borderRadius: '50px',
+            marginBottom: '16px'
+          }}>
+            <BookOpen size={16} color="var(--primary)" />
+            <span style={{ color: 'var(--primary)', fontWeight: '800', fontSize: '13px', textTransform: 'uppercase', letterSpacing: '2.5px' }}>
+              OUR PROGRAMS
+            </span>
+          </div>
+
+          <h2 style={{
+            fontFamily: 'Poppins, sans-serif',
+            fontSize: 'clamp(32px, 4.5vw, 52px)',
+            fontWeight: 900,
+            lineHeight: 1.18,
+            color: 'var(--navy)',
+            margin: '12px 0 18px'
+          }}>
+            A Curriculum for <span style={{
+              background: 'linear-gradient(135deg, #332D27 0%, #BAA892 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent'
+            }}>Tomorrow</span>
+          </h2>
+
+          <p style={{ fontSize: '18px', color: 'var(--text-dim)', lineHeight: '1.75', margin: 0 }}>
+            Join thousands of K-12 students across India mastering Artificial Intelligence through our structured, practical 4-tier roadmap.
+          </p>
+
+          {/* Interactive Grade Filter Tabs */}
+          <div style={{
+            display: 'flex',
+            justify: 'center',
+            alignItems: 'center',
+            gap: '10px',
+            marginTop: '36px',
+            flexWrap: 'wrap'
+          }}>
+            {[
+              { id: 'all', label: 'All Classes' },
+              { id: 6, label: 'Class 6 • Foundations' },
+              { id: 7, label: 'Class 7 • Explorer' },
+              { id: 8, label: 'Class 8 • Master' },
+              { id: 9, label: 'Class 9 • Innovator' }
+            ].map(tab => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveProgramFilter(tab.id)}
+                style={{
+                  padding: '10px 22px',
+                  borderRadius: '50px',
+                  border: activeProgramFilter === tab.id ? '2px solid var(--primary)' : '1px solid var(--border)',
+                  background: activeProgramFilter === tab.id ? 'var(--primary)' : 'var(--bg-card)',
+                  color: activeProgramFilter === tab.id ? '#F9F7F2' : 'var(--navy)',
+                  fontWeight: 700,
+                  fontSize: '14px',
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  boxShadow: activeProgramFilter === tab.id ? '0 8px 20px rgba(51, 45, 39, 0.25)' : 'none'
+                }}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
         </motion.div>
-        <div className="program-grid">
-          {programs.map((p, i) => (
+
+        {/* Program Cards Grid */}
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(310px, 1fr))',
+          gap: '32px',
+          position: 'relative',
+          zIndex: 1
+        }}>
+          {filteredPrograms.map((p, i) => (
             <motion.article
               key={p.id}
-              className="program-card"
-              {...fadeIn}
-              transition={{ delay: i * 0.1 }}
-              whileHover={{ scale: 1.03, y: -6, boxShadow: '0 20px 40px rgba(37,99,235,0.12)' }}
+              initial={{ opacity: 0, y: 35 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1, duration: 0.5 }}
+              whileHover={{ y: -10 }}
+              className="premium-program-card"
             >
-              {p.popular && <span className="popular-badge">MOST POPULAR</span>}
-              <div className="card-icon-box">
-              {p.id === 6 ? <Lightbulb /> : p.id === 7 ? <Brain /> : p.id === 8 ? <Zap /> : <Rocket />}
-              </div>
-              <h3>{p.title}</h3>
-              <p>{p.desc}</p>
-              <div style={{ marginTop: 'auto', paddingTop: '24px', borderTop: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <div>
-                  <span style={{ color: 'var(--accent-yellow)', fontWeight: '800' }}>★ {p.rating}</span>
-                  <span style={{ fontSize: '12px', color: 'var(--text-dim)', marginLeft: '8px' }}>({p.students})</span>
+              {/* Top Accent Gradient Border */}
+              <div className="card-top-accent"></div>
+
+              {/* Card Header: Step & Badges */}
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
+                  <span className="step-badge">{p.step}</span>
+                  <span className="grade-badge">{p.grade}</span>
+                  <span className="level-badge">{p.level}</span>
                 </div>
-                <motion.button 
-                  className="btn btn-outline" 
-                  style={{ padding: '10px 24px', fontSize: '13px', fontWeight: 700 }} 
+                {p.popular && (
+                  <span className="popular-gold-badge">
+                    <Star size={13} fill="#92400E" color="#92400E" style={{ marginRight: '4px' }} />
+                    MOST POPULAR
+                  </span>
+                )}
+              </div>
+
+              {/* Icon & Title Row */}
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '18px', marginBottom: '16px' }}>
+                <div className="program-icon-wrapper">
+                  {p.id === 6 ? <Lightbulb size={28} /> : p.id === 7 ? <Brain size={28} /> : p.id === 8 ? <Zap size={28} /> : <Rocket size={28} />}
+                </div>
+                <div>
+                  <h3 style={{ fontSize: '22px', fontWeight: 800, color: 'var(--navy)', margin: 0, lineHeight: '1.25' }}>
+                    {p.title}
+                  </h3>
+                  <div style={{ fontSize: '13px', fontWeight: 700, color: 'var(--text-dim)', marginTop: '4px' }}>
+                    {p.subtitle}
+                  </div>
+                </div>
+              </div>
+
+              {/* Description */}
+              <p style={{ fontSize: '14px', color: 'var(--text-dim)', lineHeight: '1.65', marginBottom: '20px' }}>
+                {p.desc}
+              </p>
+
+              {/* Key Topics Tags */}
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', marginBottom: '20px' }}>
+                {p.tags.map((tag, tIdx) => (
+                  <span key={tIdx} className="program-topic-tag">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+
+              {/* Highlights Checklist */}
+              <div style={{
+                background: 'var(--bg-subtle)',
+                padding: '16px',
+                borderRadius: '16px',
+                border: '1px solid var(--border)',
+                marginBottom: '24px',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '10px'
+              }}>
+                {p.highlights.map((h, hIdx) => (
+                  <div key={hIdx} style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '13px', color: 'var(--navy)', fontWeight: 600 }}>
+                    <CheckCircle2 size={16} color="var(--primary)" style={{ flexShrink: 0 }} />
+                    <span>{h}</span>
+                  </div>
+                ))}
+              </div>
+
+              {/* Card Footer: Rating, Duration & Action Button */}
+              <div style={{
+                marginTop: 'auto',
+                paddingTop: '20px',
+                borderTop: '1px solid var(--border)',
+                display: 'flex',
+                justify: 'space-between',
+                alignItems: 'center',
+                flexWrap: 'wrap',
+                gap: '12px'
+              }}>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <Star size={15} fill="#D4AF37" color="#D4AF37" />
+                    <span style={{ fontWeight: 800, fontSize: '14px', color: 'var(--navy)' }}>{p.rating}</span>
+                    <span style={{ fontSize: '12px', color: 'var(--text-muted)' }}>({p.students})</span>
+                  </div>
+                  <div style={{ fontSize: '12px', fontWeight: 700, color: 'var(--text-dim)', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                    <Clock size={13} color="var(--primary)" />
+                    <span>{p.duration} Hands-on</span>
+                  </div>
+                </div>
+
+                <motion.button
+                  className="btn btn-primary btn-glow"
                   onClick={() => navigateTo('syllabus', p.id)}
-                  whileHover={{ scale: 1.08, y: -2 }}
+                  whileHover={{ scale: 1.05, y: -2 }}
                   whileTap={{ scale: 0.95 }}
+                  style={{
+                    padding: '12px 24px',
+                    fontSize: '13px',
+                    fontWeight: 800,
+                    background: 'linear-gradient(135deg, #332D27 0%, #241F1A 100%)',
+                    borderRadius: '50px',
+                    color: '#F9F7F2',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '8px',
+                    border: '1px solid rgba(186, 168, 146, 0.3)',
+                    boxShadow: '0 4px 14px rgba(51, 45, 39, 0.2)'
+                  }}
                 >
-                  View Details
+                  <span>Explore Syllabus</span>
+                  <ArrowRight size={15} />
                 </motion.button>
               </div>
+
             </motion.article>
           ))}
         </div>
+
+        {/* Bottom Callout Roadmap Banner */}
+        <motion.div
+          {...fadeIn}
+          style={{
+            marginTop: '60px',
+            padding: '32px 40px',
+            background: 'linear-gradient(135deg, #332D27 0%, #241F1A 100%)',
+            borderRadius: '28px',
+            border: '2px solid #BAA892',
+            color: '#F9F7F2',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '24px',
+            boxShadow: '0 16px 40px rgba(51, 45, 39, 0.25)'
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+            <div style={{
+              width: '56px',
+              height: '56px',
+              borderRadius: '20px',
+              background: 'rgba(186, 168, 146, 0.2)',
+              border: '1px solid rgba(186, 168, 146, 0.4)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: '#BAA892',
+              flexShrink: 0
+            }}>
+              <GraduationCap size={30} />
+            </div>
+            <div>
+              <h4 style={{ fontSize: '20px', fontWeight: 800, color: '#F9F7F2', margin: 0 }}>
+                Looking for School Partnership or Customized Workshops?
+              </h4>
+              <p style={{ fontSize: '14px', color: '#BAA892', margin: '4px 0 0', lineHeight: 1.5 }}>
+                We bring AISI AI labs, teachers, and student certification directly to your school.
+              </p>
+            </div>
+          </div>
+
+          <motion.button
+            className="btn"
+            onClick={() => navigateTo('workshops')}
+            whileHover={{ scale: 1.06, y: -2 }}
+            whileTap={{ scale: 0.96 }}
+            style={{
+              padding: '14px 32px',
+              fontSize: '14px',
+              fontWeight: 800,
+              background: 'linear-gradient(135deg, #BAA892 0%, #9E8D77 100%)',
+              color: '#1F1A16',
+              borderRadius: '50px',
+              border: 'none',
+              cursor: 'pointer',
+              boxShadow: '0 8px 24px rgba(186, 168, 146, 0.35)',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px'
+            }}
+          >
+            <span>Request School Demo</span>
+            <ArrowRight size={16} />
+          </motion.button>
+        </motion.div>
       </section>
 
       <section className="container section" style={{ background: 'var(--bg-subtle)', borderRadius: '40px', padding: '100px 60px' }}>
@@ -1238,12 +2031,15 @@ function App() {
               </div>
             </div>
             <motion.button 
-              className="btn btn-primary btn-glow"
-              style={{ padding: '14px 40px', fontSize: '15px', fontWeight: 700, background: 'linear-gradient(135deg, #2563EB 0%, #3B72F7 100%)' }}
+              className="btn btn-primary btn-glow btn-down-arrow"
+              style={{ padding: '14px 40px', fontSize: '15px', fontWeight: 700, background: 'linear-gradient(135deg, #10B981 0%, #059669 100%)', borderRadius: '50px', color: 'white' }}
               whileHover={{ scale: 1.06, y: -3 }}
               whileTap={{ scale: 0.96 }}
             >
-              Download Sample <ArrowRight size={18} style={{ marginLeft: '8px' }} />
+              <span>Download Sample</span>
+              <span className="arrow-icon hero-arrow-bounce">
+                <ChevronDown size={18} />
+              </span>
             </motion.button>
           </motion.div>
         </div>
@@ -1264,7 +2060,7 @@ function App() {
               style={{ padding: '40px', position: 'relative', overflow: 'hidden' }}
             >
               {/* Decorative top border for image testimonials */}
-              {t.img && <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '4px', background: i === 0 ? 'linear-gradient(90deg, #2563EB, #06B6D4)' : 'linear-gradient(90deg, #7C3AED, #06B6D4)' }}></div>}
+              {t.img && <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '4px', background: i === 0 ? 'linear-gradient(90deg, #10B981, #F59E0B)' : 'linear-gradient(90deg, #8B5CF6, #14B8A6)' }}></div>}
               <div style={{ color: 'var(--primary)', marginBottom: '24px' }}><MessageCircle size={32} /></div>
               <p style={{ fontStyle: 'italic', color: 'var(--text-main)', marginBottom: '24px', fontSize: '16px', lineHeight: '1.6' }}>"{t.text}"</p>
               <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
@@ -1279,7 +2075,7 @@ function App() {
                       borderRadius: '50%', 
                       objectFit: 'cover', 
                       border: '3px solid var(--primary)',
-                      boxShadow: '0 4px 12px rgba(0,101,255,0.2)'
+                      boxShadow: '0 4px 12px rgba(16,185,129,0.2)'
                     }} 
                   />
                 ) : (
@@ -1287,7 +2083,7 @@ function App() {
                     width: '52px',
                     height: '52px',
                     borderRadius: '50%',
-                    background: 'linear-gradient(135deg, var(--primary), #06B6D4)',
+                    background: 'linear-gradient(135deg, var(--primary), #F59E0B)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -1326,46 +2122,113 @@ function App() {
             </motion.div>
             
             <motion.div {...fadeIn} style={{ background: 'var(--glass-bg)', padding: '40px', borderRadius: '32px', border: '1px solid var(--glass-border)', backdropFilter: 'blur(10px)' }}>
-              <h3 style={{ marginBottom: '12px' }}>Verify Certificate</h3>
-              <p style={{ fontSize: '14px', opacity: 0.75, marginBottom: '28px', lineHeight: '1.6' }}>
-                Click below to open our secure certificate verification portal. Enter your Certificate ID to instantly verify authenticity.
+              <h3 style={{ marginBottom: '12px', color: '#F9F7F2' }}>Verify Student Certificate</h3>
+              <p style={{ fontSize: '14px', opacity: 0.85, marginBottom: '24px', lineHeight: '1.6', color: '#EFEBE4' }}>
+                Enter student Certificate ID (e.g. <code>AISI-2026-6001</code>) to instantly verify authenticity with live backend credentials.
               </p>
-              <motion.a
-                href="https://certificate-verify.strinttechnologies.com/"
-                target="_blank"
-                rel="noreferrer"
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  gap: '10px',
-                  width: '100%',
-                  padding: '18px',
-                  fontSize: '16px',
-                  fontWeight: 700,
-                  background: 'linear-gradient(135deg, #2563EB 0%, #3B72F7 100%)',
-                  color: 'white',
-                  borderRadius: '16px',
-                  textDecoration: 'none',
-                  boxShadow: '0 8px 32px rgba(37,99,235,0.4)',
-                  fontFamily: 'Inter, sans-serif',
-                  letterSpacing: '0.3px',
-                  transition: 'all 0.3s ease'
-                }}
-                whileHover={{ scale: 1.03, y: -2, boxShadow: '0 12px 40px rgba(37,99,235,0.55)' }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <ShieldCheck size={20} />
-                Open Verification Portal
-                <ArrowRight size={18} />
-              </motion.a>
+
+              <form onSubmit={handleCertVerify} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                <div style={{ display: 'flex', gap: '10px' }}>
+                  <input
+                    type="text"
+                    placeholder="e.g. AISI-2026-6001"
+                    value={certId}
+                    onChange={(e) => setCertId(e.target.value)}
+                    style={{
+                      flex: 1,
+                      padding: '14px 20px',
+                      borderRadius: '16px',
+                      border: '1px solid var(--border-strong)',
+                      outline: 'none',
+                      fontSize: '15px',
+                      fontWeight: '700',
+                      background: 'rgba(255, 255, 255, 0.95)',
+                      color: '#332D27'
+                    }}
+                  />
+                  <motion.button
+                    type="submit"
+                    className="btn btn-primary"
+                    disabled={certVerifying}
+                    whileHover={{ scale: 1.04 }}
+                    whileTap={{ scale: 0.96 }}
+                    style={{
+                      padding: '14px 28px',
+                      borderRadius: '16px',
+                      background: 'linear-gradient(135deg, #BAA892 0%, #9E8D77 100%)',
+                      color: '#1F1A16',
+                      fontWeight: 800,
+                      fontSize: '14px',
+                      border: 'none',
+                      cursor: 'pointer'
+                    }}
+                  >
+                    {certVerifying ? 'Verifying...' : 'Verify ID'}
+                  </motion.button>
+                </div>
+
+                {/* Quick Sample ID Chips */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', fontSize: '12px', opacity: 0.85 }}>
+                  <span style={{ color: '#BAA892', fontWeight: 700 }}>Try Sample IDs:</span>
+                  {['AISI-2026-6001', 'AISI-2026-7002', 'AISI-2026-8003', 'AISI-2026-9004'].map(sample => (
+                    <span
+                      key={sample}
+                      onClick={() => setCertId(sample)}
+                      style={{
+                        background: 'rgba(186, 168, 146, 0.25)',
+                        border: '1px solid rgba(186, 168, 146, 0.4)',
+                        color: '#F9F7F2',
+                        padding: '3px 10px',
+                        borderRadius: '20px',
+                        cursor: 'pointer',
+                        fontWeight: 700
+                      }}
+                    >
+                      {sample}
+                    </span>
+                  ))}
+                </div>
+              </form>
+
+              {/* Verification Result Card */}
+              {certResult && (
+                <motion.div
+                  initial={{ opacity: 0, y: 15 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  style={{
+                    marginTop: '24px',
+                    padding: '20px',
+                    borderRadius: '20px',
+                    background: certResult.success ? 'rgba(16, 185, 129, 0.15)' : 'rgba(239, 68, 68, 0.15)',
+                    border: certResult.success ? '1px solid #10B981' : '1px solid #EF4444',
+                    color: '#F9F7F2'
+                  }}
+                >
+                  {certResult.success ? (
+                    <div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#34D399', fontWeight: 900, fontSize: '16px', marginBottom: '10px' }}>
+                        <CheckCircle2 size={22} /> VERIFIED AISI CERTIFICATE
+                      </div>
+                      <div style={{ fontSize: '14px', lineHeight: '1.7' }}>
+                        <div><strong>Student:</strong> {certResult.cert.studentName}</div>
+                        <div><strong>Course:</strong> {certResult.cert.courseTitle}</div>
+                        <div><strong>School:</strong> {certResult.cert.school}</div>
+                        <div><strong>Grade Result:</strong> <span style={{ color: '#FBBF24', fontWeight: 800 }}>{certResult.cert.gradeScore}</span></div>
+                        <div><strong>Issue Date:</strong> {certResult.cert.issueDate}</div>
+                      </div>
+                    </div>
+                  ) : (
+                    <div style={{ color: '#F87171', fontWeight: 700, fontSize: '14px' }}>
+                      ❌ {certResult.message}
+                    </div>
+                  )}
+                </motion.div>
+              )}
+
               <div style={{ marginTop: '20px', display: 'flex', alignItems: 'center', gap: '8px', justifyContent: 'center', opacity: 0.6, fontSize: '12px' }}>
                 <ShieldCheck size={14} />
-                <span>Secured by Strint Technologies • certificate-verify.strinttechnologies.com</span>
+                <span>Secured by Strint Technologies • AISI Live Backend Verification</span>
               </div>
-              <p style={{ marginTop: '16px', fontSize: '13px', opacity: 0.55, textAlign: 'center' }}>
-                Lost your certificate? <a href="#" style={{ color: 'var(--primary)', textDecoration: 'none' }} onClick={() => navigateTo('contact')}>Contact Support</a>
-              </p>
             </motion.div>
           </div>
         </div>
@@ -1402,17 +2265,33 @@ function App() {
             <h3 style={{ fontSize: '36px', marginBottom: '16px' }}>Stay Ahead in the AI Revolution</h3>
             <p style={{ opacity: 0.9, fontSize: '18px' }}>Join our newsletter to receive the latest updates on bootcamps, workshops, and AI news.</p>
           </div>
-          <div style={{ flex: 1, display: 'flex', gap: '12px', background: 'var(--bg-card)', padding: '8px', borderRadius: '50px' }}>
-            <input type="email" placeholder="Your school email" style={{ flex: 1, border: 'none', padding: '12px 24px', outline: 'none', borderRadius: '50px' }} />
-            <motion.button 
-              className="btn btn-primary btn-glow"
-              style={{ padding: '12px 36px', fontSize: '15px', fontWeight: 700, background: 'linear-gradient(135deg, #2563EB 0%, #3B72F7 100%)', whiteSpace: 'nowrap' }}
-              whileHover={{ scale: 1.06, y: -2 }}
-              whileTap={{ scale: 0.96 }}
-            >
-              Subscribe Now
-            </motion.button>
-          </div>
+          <form onSubmit={handleNewsletterSubmit} style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <div style={{ display: 'flex', gap: '12px', background: 'var(--bg-card)', padding: '8px', borderRadius: '50px' }}>
+              <input
+                type="email"
+                placeholder="Your school email"
+                value={newsletterEmail}
+                onChange={(e) => setNewsletterEmail(e.target.value)}
+                required
+                style={{ flex: 1, border: 'none', padding: '12px 24px', outline: 'none', borderRadius: '50px', fontSize: '14px' }}
+              />
+              <motion.button 
+                type="submit"
+                className="btn btn-primary btn-glow"
+                disabled={newsletterSubmitting}
+                style={{ padding: '12px 36px', fontSize: '15px', fontWeight: 700, background: 'linear-gradient(135deg, #332D27 0%, #241F1A 100%)', whiteSpace: 'nowrap', borderRadius: '50px', color: '#F9F7F2' }}
+                whileHover={{ scale: 1.06, y: -2 }}
+                whileTap={{ scale: 0.96 }}
+              >
+                {newsletterSubmitting ? 'Submitting...' : 'Subscribe Now'}
+              </motion.button>
+            </div>
+            {newsletterStatus === 'success' && (
+              <div style={{ color: '#10B981', fontSize: '13px', fontWeight: 800, textAlign: 'center' }}>
+                ✓ Successfully subscribed to AISI Newsletter!
+              </div>
+            )}
+          </form>
         </motion.div>
       </section>
     </>
@@ -2028,47 +2907,58 @@ function App() {
       <div className="curriculum-page">
         {/* Hero - Revamped */}
         <section className="page-hero" style={{
-          background: `linear-gradient(135deg, ${activeCurriculumLevel === 6 ? 'rgba(37, 99, 235, 0.7)' : 'rgba(124, 58, 237, 0.7)'} 0%, rgba(6, 182, 212, 0.6) 100%), url(https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80)`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          color: 'white',
-          padding: '120px 0 60px',
           position: 'relative',
           overflow: 'hidden',
-          minHeight: '75vh',
+          minHeight: '65vh',
           display: 'flex',
-          alignItems: 'center'
+          alignItems: 'center',
+          color: '#F9F7F2',
+          padding: '100px 0 60px',
+          borderBottom: '1px solid var(--border)'
         }}>
-          {/* Subtle dark overlay at bottom for text readability */}
-          <div style={{ position: 'absolute', bottom: 0, left: 0, width: '100%', height: '60%', background: 'linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 100%)', zIndex: 0 }}></div>
-          <div className="hero-blob" style={{ background: 'rgba(255,255,255,0.08)', top: '-40%', left: '60%' }}></div>
-          <div className="hero-blob" style={{ background: 'rgba(255,255,255,0.05)', top: '60%', left: '-10%' }}></div>
-          
-          <div className="container" style={{ position: 'relative', zIndex: 1, width: '100%' }}>
+          {/* Background Image - Clear & Vivid */}
+          <div style={{
+            position: 'absolute',
+            inset: 0,
+            backgroundImage: `url(https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80)`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'brightness(0.7) contrast(1.15) saturate(1.1)',
+            zIndex: 0
+          }}></div>
+          {/* Sleek Warm Tint Gradient */}
+          <div style={{
+            position: 'absolute',
+            inset: 0,
+            background: 'linear-gradient(135deg, rgba(35, 29, 25, 0.75) 0%, rgba(51, 45, 39, 0.5) 50%, rgba(20, 16, 14, 0.85) 100%)',
+            zIndex: 1
+          }}></div>
+
+          <div className="container" style={{ position: 'relative', zIndex: 2, width: '100%' }}>
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', alignItems: 'center' }} className="curriculum-hero-grid">
               {/* Left: Text Content */}
               <motion.div {...fadeIn} style={{ textAlign: 'left' }}>
-                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(255,255,255,0.18)', padding: '10px 22px', borderRadius: '50px', backdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.3)', marginBottom: '24px' }}>
-                  <BookOpen size={16} />
-                  <span style={{ fontWeight: '700', fontSize: '13px', letterSpacing: '2px', textTransform: 'uppercase' }}>AISI Curriculum</span>
+                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', background: 'rgba(186, 168, 146, 0.18)', padding: '8px 20px', borderRadius: '50px', border: '1px solid rgba(186, 168, 146, 0.3)', marginBottom: '20px' }}>
+                  <BookOpen size={16} color="#BAA892" />
+                  <span style={{ fontWeight: '800', fontSize: '12px', letterSpacing: '2px', textTransform: 'uppercase', color: '#BAA892' }}>AISI Curriculum</span>
                 </div>
-                <h1 style={{ fontFamily: 'Poppins, sans-serif', fontSize: 'clamp(32px, 5vw, 56px)', fontWeight: 900, marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
+                <h1 style={{ fontFamily: 'Poppins, sans-serif', fontSize: 'clamp(34px, 5vw, 56px)', fontWeight: 900, marginBottom: '20px', letterSpacing: '-0.02em', lineHeight: 1.1, color: '#F9F7F2', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
                   K-12 AI Education <br />
-                  <span style={{ fontFamily: 'Space Grotesk, sans-serif', color: '#60A5FA', fontWeight: 700 }}>Curriculum</span>
+                  <span style={{ fontFamily: 'Space Grotesk, sans-serif', color: '#BAA892', fontWeight: 800 }}>Curriculum</span>
                 </h1>
                 <p style={{ 
                   fontSize: 'clamp(15px, 2vw, 18px)', 
                   maxWidth: '520px', 
                   lineHeight: '1.8',
-                  color: 'rgba(255,255,255,0.95)',
-                  background: 'rgba(0,0,0,0.3)',
+                  color: '#EFEBE4',
+                  background: 'rgba(51, 45, 39, 0.6)',
                   backdropFilter: 'blur(8px)',
                   padding: '16px 24px',
                   borderRadius: '16px',
-                  border: '1px solid rgba(255,255,255,0.1)',
+                  border: '1px solid rgba(186, 168, 146, 0.2)',
                   marginBottom: '32px'
                 }}>
-                  Structured, day-by-day AI learning programs designed for Classes 6–7, covering fundamentals to advanced applications.
+                  Structured, day-by-day AI learning programs designed for Classes 6–9, covering fundamentals to advanced applications.
                 </p>
                 <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
                   <motion.button
@@ -2133,11 +3023,11 @@ function App() {
                       width: '52px',
                       height: '52px',
                       borderRadius: '14px',
-                      background: 'linear-gradient(135deg, rgba(96,165,250,0.3), rgba(6,182,212,0.3))',
+                      background: 'rgba(186, 168, 146, 0.25)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      color: '#60A5FA',
+                      color: '#BAA892',
                       flexShrink: 0
                     }}>
                       {item.icon}
@@ -2195,10 +3085,10 @@ function App() {
             style={{ display: 'flex', justifyContent: 'center', gap: '28px', marginBottom: '60px', flexWrap: 'wrap', perspective: '1200px' }}
           >
             {[
-              { level: 6, cover: bookCover1, spine: '#047857', spineLight: '#059669', badge: '🟢 Beginner', title: 'AI Foundations', sub: 'Class 6' },
-              { level: 7, cover: bookCover2, spine: '#1D4ED8', spineLight: '#2563EB', badge: '🟡 Intermediate', title: 'AI Explorer', sub: 'Class 7' },
-              { level: 8, cover: bookCover3, spine: '#6D28D9', spineLight: '#7C3AED', badge: '🔵 Advanced', title: 'AI Master', sub: 'Class 8' },
-              { level: 9, cover: bookCover4, spine: '#B91C1C', spineLight: '#DC2626', badge: '🔴 Expert', title: 'AI Innovator', sub: 'Class 9' }
+              { level: 6, cover: bookCover1, spine: '#332D27', spineLight: '#544C43', badge: '🟢 Beginner', title: 'AI Foundations', sub: 'Class 6' },
+              { level: 7, cover: bookCover2, spine: '#544C43', spineLight: '#BAA892', badge: '🟡 Intermediate', title: 'AI Explorer', sub: 'Class 7' },
+              { level: 8, cover: bookCover3, spine: '#332D27', spineLight: '#BAA892', badge: '🔵 Advanced', title: 'AI Master', sub: 'Class 8' },
+              { level: 9, cover: bookCover4, spine: '#241F1A', spineLight: '#544C43', badge: '🔴 Expert', title: 'AI Innovator', sub: 'Class 9' }
             ].map((book, i) => (
               <motion.div
                 key={book.level}
@@ -2596,19 +3486,34 @@ function App() {
     <div className="about-page">
       {/* About Us Hero */}
       <section className="page-hero" style={{ 
-        background: 'linear-gradient(135deg, rgba(30, 64, 175, 0.7) 0%, rgba(37, 99, 235, 0.65) 100%), url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80)', 
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        color: 'white', 
+        position: 'relative',
+        overflow: 'hidden',
+        color: '#F9F7F2', 
         padding: '120px 0', 
         textAlign: 'center', 
-        position: 'relative', 
-        overflow: 'hidden' 
+        borderBottom: '1px solid var(--border)'
       }}>
-        <div className="hero-blob" style={{ background: 'rgba(255,255,255,0.1)', top: '-50%', left: '20%' }}></div>
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-           <motion.h1 style={{ fontSize: '48px', marginBottom: '24px' }} {...fadeIn}>The Future of Education</motion.h1>
-           <motion.p style={{ fontSize: '18px', opacity: 0.9, maxWidth: '600px', margin: '0 auto' }} {...fadeIn} transition={{ delay: 0.1 }}>
+        {/* Background Image - Clear & Vivid */}
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          backgroundImage: `url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: 'brightness(0.68) contrast(1.15)',
+          zIndex: 0
+        }}></div>
+        {/* Warm Overlay */}
+        <div style={{
+          position: 'absolute',
+          inset: 0,
+          background: 'linear-gradient(135deg, rgba(35, 29, 25, 0.75) 0%, rgba(51, 45, 39, 0.5) 50%, rgba(20, 16, 14, 0.85) 100%)',
+          zIndex: 1
+        }}></div>
+
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+           <motion.h1 style={{ fontSize: '48px', fontWeight: 900, marginBottom: '24px', color: '#F9F7F2', textShadow: '0 2px 12px rgba(0,0,0,0.8)' }} {...fadeIn}>The Future of Education</motion.h1>
+           <motion.p style={{ fontSize: '19px', color: '#EFEBE4', maxWidth: '650px', margin: '0 auto', lineHeight: '1.75', textShadow: '0 2px 8px rgba(0,0,0,0.7)' }} {...fadeIn} transition={{ delay: 0.1 }}>
              Artificial Intelligence Society India (AISI) is dedicated to democratizing AI literacy, building a nation of problem solvers and innovators.
            </motion.p>
         </div>
@@ -2676,11 +3581,11 @@ function App() {
                     padding: '11px 24px',
                     fontSize: '13px',
                     fontWeight: '700',
-                    background: 'linear-gradient(135deg, #2563EB 0%, #3B72F7 100%)',
-                    color: 'white',
+                    background: 'linear-gradient(135deg, #332D27 0%, #241F1A 100%)',
+                    color: '#F9F7F2',
                     borderRadius: '9999px',
                     textDecoration: 'none',
-                    boxShadow: '0 4px 16px rgba(37,99,235,0.3)',
+                    boxShadow: '0 4px 16px rgba(51, 45, 39, 0.3)',
                     fontFamily: 'Inter, sans-serif',
                     transition: 'all 0.3s ease'
                   }}
@@ -2792,10 +3697,12 @@ function App() {
 
   const renderDemocratizationPage = () => (
     <div className="vision-page">
-      <section className="page-hero" style={{ background: 'linear-gradient(135deg, rgba(37,99,235,0.7) 0%, rgba(15,23,42,0.75) 100%), url(https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80)', backgroundSize: 'cover', backgroundPosition: 'center', color: 'white', padding: '120px 0', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-        <div className="container">
-          <motion.h1 style={{ fontSize: '48px', marginBottom: '24px' }} {...fadeIn}>AI Democratization</motion.h1>
-          <motion.p style={{ fontSize: '20px', maxWidth: '800px', margin: '0 auto', opacity: 0.9 }} {...fadeIn}>
+      <section className="page-hero" style={{ position: 'relative', overflow: 'hidden', color: '#F9F7F2', padding: '120px 0', textAlign: 'center', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80)', backgroundSize: 'cover', backgroundPosition: 'center', filter: 'brightness(0.68) contrast(1.15)', zIndex: 0 }}></div>
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(35, 29, 25, 0.75) 0%, rgba(51, 45, 39, 0.5) 50%, rgba(20, 16, 14, 0.85) 100%)', zIndex: 1 }}></div>
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <motion.h1 style={{ fontSize: '48px', fontWeight: 900, marginBottom: '24px', color: '#F9F7F2', textShadow: '0 2px 12px rgba(0,0,0,0.8)' }} {...fadeIn}>AI Democratization</motion.h1>
+          <motion.p style={{ fontSize: '19px', color: '#EFEBE4', maxWidth: '800px', margin: '0 auto', lineHeight: '1.75', textShadow: '0 2px 8px rgba(0,0,0,0.7)' }} {...fadeIn}>
             Ensuring that every student, regardless of their location or background, has the opportunity to master the language of the future.
           </motion.p>
         </div>
@@ -2824,10 +3731,12 @@ function App() {
 
   const renderPracticalMasteryPage = () => (
     <div className="vision-page">
-      <section className="page-hero" style={{ background: 'linear-gradient(135deg, rgba(79,70,229,0.7) 0%, rgba(49,46,129,0.7) 100%), url(https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1600&q=80)', backgroundSize: 'cover', backgroundPosition: 'center', color: 'white', padding: '120px 0', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-        <div className="container">
-          <motion.h1 style={{ fontSize: '48px', marginBottom: '24px' }} {...fadeIn}>Practical Mastery</motion.h1>
-          <motion.p style={{ fontSize: '20px', maxWidth: '800px', margin: '0 auto', opacity: 0.9 }} {...fadeIn}>
+      <section className="page-hero" style={{ position: 'relative', overflow: 'hidden', color: '#F9F7F2', padding: '120px 0', textAlign: 'center', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1600&q=80)', backgroundSize: 'cover', backgroundPosition: 'center', filter: 'brightness(0.68) contrast(1.15)', zIndex: 0 }}></div>
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(35, 29, 25, 0.75) 0%, rgba(51, 45, 39, 0.5) 50%, rgba(20, 16, 14, 0.85) 100%)', zIndex: 1 }}></div>
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <motion.h1 style={{ fontSize: '48px', fontWeight: 900, marginBottom: '24px', color: '#F9F7F2', textShadow: '0 2px 12px rgba(0,0,0,0.8)' }} {...fadeIn}>Practical Mastery</motion.h1>
+          <motion.p style={{ fontSize: '19px', color: '#EFEBE4', maxWidth: '800px', margin: '0 auto', lineHeight: '1.75', textShadow: '0 2px 8px rgba(0,0,0,0.7)' }} {...fadeIn}>
             Moving beyond textbooks to real-world implementation. We teach students how to build, deploy, and scale AI models.
           </motion.p>
         </div>
@@ -2856,10 +3765,12 @@ function App() {
 
   const renderFutureLeadershipPage = () => (
     <div className="vision-page">
-      <section className="page-hero" style={{ background: 'linear-gradient(135deg, rgba(15,23,42,0.7) 0%, rgba(0,0,0,0.7) 100%), url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80)', backgroundSize: 'cover', backgroundPosition: 'center', color: 'white', padding: '120px 0', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
-        <div className="container">
-          <motion.h1 style={{ fontSize: '48px', marginBottom: '24px' }} {...fadeIn}>Future Leadership</motion.h1>
-          <motion.p style={{ fontSize: '20px', maxWidth: '800px', margin: '0 auto', opacity: 0.9 }} {...fadeIn}>
+      <section className="page-hero" style={{ position: 'relative', overflow: 'hidden', color: '#F9F7F2', padding: '120px 0', textAlign: 'center', borderBottom: '1px solid var(--border)' }}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1600&q=80)', backgroundSize: 'cover', backgroundPosition: 'center', filter: 'brightness(0.68) contrast(1.15)', zIndex: 0 }}></div>
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(35, 29, 25, 0.75) 0%, rgba(51, 45, 39, 0.5) 50%, rgba(20, 16, 14, 0.85) 100%)', zIndex: 1 }}></div>
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <motion.h1 style={{ fontSize: '48px', fontWeight: 900, marginBottom: '24px', color: '#F9F7F2', textShadow: '0 2px 12px rgba(0,0,0,0.8)' }} {...fadeIn}>Future Leadership</motion.h1>
+          <motion.p style={{ fontSize: '19px', color: '#EFEBE4', maxWidth: '800px', margin: '0 auto', lineHeight: '1.75', textShadow: '0 2px 8px rgba(0,0,0,0.7)' }} {...fadeIn}>
             Nurturing the innovators who will lead India's technological revolution and shape the global AI landscape.
           </motion.p>
         </div>
@@ -2889,19 +3800,18 @@ function App() {
   const renderWorkshopsPage = () => (
     <div className="workshops-page">
       <section className="page-hero" style={{ 
-        background: 'linear-gradient(135deg, rgba(30, 64, 175, 0.7) 0%, rgba(37, 99, 235, 0.65) 100%), url(https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=80)', 
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        color: 'white', 
+        position: 'relative',
+        overflow: 'hidden',
+        color: '#F9F7F2', 
         padding: '120px 0', 
         textAlign: 'center',
-        position: 'relative',
-        overflow: 'hidden'
+        borderBottom: '1px solid var(--border)'
       }}>
-        <div className="hero-blob" style={{ background: 'rgba(255,255,255,0.1)', top: '-50%', left: '20%' }}></div>
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <motion.h1 style={{ fontSize: '48px', marginBottom: '24px' }} {...fadeIn}>Workshops & Impact</motion.h1>
-          <motion.p style={{ fontSize: '20px', maxWidth: '800px', margin: '0 auto', opacity: 0.9 }} {...fadeIn}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=80)', backgroundSize: 'cover', backgroundPosition: 'center', filter: 'brightness(0.68) contrast(1.15)', zIndex: 0 }}></div>
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(35, 29, 25, 0.75) 0%, rgba(51, 45, 39, 0.5) 50%, rgba(20, 16, 14, 0.85) 100%)', zIndex: 1 }}></div>
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <motion.h1 style={{ fontSize: '48px', fontWeight: 900, marginBottom: '24px', color: '#F9F7F2', textShadow: '0 2px 12px rgba(0,0,0,0.8)' }} {...fadeIn}>Workshops & Impact</motion.h1>
+          <motion.p style={{ fontSize: '19px', color: '#EFEBE4', maxWidth: '800px', margin: '0 auto', lineHeight: '1.75', textShadow: '0 2px 8px rgba(0,0,0,0.7)' }} {...fadeIn}>
             Bringing cutting-edge AI education to schools across Guntur and Andhra Pradesh through immersive, hands-on learning experiences.
           </motion.p>
         </div>
@@ -2985,7 +3895,6 @@ function App() {
           </motion.div>
         </div>
       </section>
-      
       <div style={{ textAlign: 'center', marginBottom: '80px' }}>
         <button className="btn btn-outline" onClick={() => navigateTo('home')}>
           <ArrowLeft size={20} style={{ marginRight: '8px' }} /> Back to Home
@@ -2995,119 +3904,472 @@ function App() {
   );
 
   const renderContactPage = () => (
-    <div className="contact-page">
-      <section className="page-hero" style={{ 
-        background: 'linear-gradient(135deg, rgba(30, 64, 175, 0.7) 0%, rgba(37, 99, 235, 0.65) 100%), url(https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1600&q=80)', 
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        color: 'white', 
-        padding: '120px 0', 
-        textAlign: 'center',
+    <div className="contact-page" style={{ background: '#FAF8F5', minHeight: '100vh' }}>
+      {/* Top Hero Section with Classical Arch/Building Background */}
+      <section style={{ 
         position: 'relative',
+        padding: '80px 0 60px',
         overflow: 'hidden'
       }}>
-        <div className="hero-blob" style={{ background: 'rgba(255,255,255,0.1)', top: '-50%', left: '20%' }}></div>
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-          <motion.h1 style={{ fontSize: '48px', marginBottom: '24px' }} {...fadeIn}>Get in Touch</motion.h1>
-          <motion.p style={{ fontSize: '20px', maxWidth: '800px', margin: '0 auto', opacity: 0.9 }} {...fadeIn}>
-            Have questions about our programs or want to host a workshop? We're here to help.
-          </motion.p>
+        {/* Classical Building Image floating on right with subtle gradient fade */}
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          right: 0,
+          width: '55%',
+          height: '100%',
+          backgroundImage: `url('https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?auto=format&fit=crop&w=1200&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center top',
+          opacity: 0.3,
+          maskImage: 'linear-gradient(to left, rgba(0,0,0,0.9) 20%, transparent 100%)',
+          WebkitMaskImage: 'linear-gradient(to left, rgba(0,0,0,0.9) 20%, transparent 100%)',
+          pointerEvents: 'none'
+        }}></div>
+
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
+          <motion.div {...fadeIn} style={{ maxWidth: '650px' }}>
+            <span style={{ 
+              fontSize: '11px', 
+              fontWeight: 800, 
+              letterSpacing: '2.5px', 
+              color: '#9E8D77', 
+              textTransform: 'uppercase', 
+              display: 'block', 
+              marginBottom: '12px' 
+            }}>
+              GET IN TOUCH
+            </span>
+            <h1 style={{ 
+              fontFamily: '"Playfair Display", Georgia, serif', 
+              fontSize: 'clamp(40px, 4.8vw, 58px)', 
+              fontWeight: 700, 
+              color: '#2A241F', 
+              lineHeight: 1.12, 
+              marginBottom: '18px' 
+            }}>
+              We'd Love to Hear from You
+            </h1>
+            <p style={{ 
+              fontSize: '16px', 
+              color: '#6B6155', 
+              lineHeight: '1.65' 
+            }}>
+              Have questions about our programs, workshops, or partnerships?<br />
+              Our team is here to help you on your AI education journey.
+            </p>
+          </motion.div>
         </div>
       </section>
 
-      <section className="container section">
-        <div className="grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '80px' }}>
-          <motion.div {...fadeIn}>
-            <h2 style={{ fontSize: '32px', marginBottom: '24px' }}>Contact Information</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
-              <div style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
-                <div style={{ padding: '12px', background: 'var(--bg-subtle)', borderRadius: '12px', color: 'var(--primary)' }}><MapPin size={24} /></div>
-                <div>
-                  <h4 style={{ marginBottom: '4px' }}>Headquarters</h4>
-                  <p style={{ color: 'var(--text-dim)' }}>Guntur, Andhra Pradesh, India</p>
-                </div>
-              </div>
-              <div style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
-                <div style={{ padding: '12px', background: 'var(--bg-subtle)', borderRadius: '12px', color: 'var(--primary)' }}><MessageCircle size={24} /></div>
-                <div>
-                  <h4 style={{ marginBottom: '4px' }}>Email Us</h4>
-                  <p style={{ color: 'var(--text-dim)' }}>contact@aisi.org.in</p>
-                </div>
-              </div>
-              <div style={{ display: 'flex', gap: '20px', alignItems: 'flex-start' }}>
-                <div style={{ padding: '12px', background: 'var(--bg-subtle)', borderRadius: '12px', color: 'var(--primary)' }}><GraduationCap size={24} /></div>
-                <div>
-                  <h4 style={{ marginBottom: '4px' }}>Academic Support</h4>
-                  <p style={{ color: 'var(--text-dim)' }}>support@aisi.org.in</p>
-                </div>
-              </div>
-            </div>
-          </motion.div>
+      {/* Main Content Area: Split Form & Details */}
+      <section className="container" style={{ paddingBottom: '60px' }}>
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: '1.4fr 1fr', 
+          gap: '32px', 
+          alignItems: 'start' 
+        }}>
+          
+          {/* LEFT PANEL: Send Us a Message Card */}
+          <motion.div 
+            {...fadeIn} 
+            style={{ 
+              background: '#FFFFFF', 
+              borderRadius: '24px', 
+              padding: '40px 44px', 
+              border: '1px solid #ECE7DF', 
+              boxShadow: '0 4px 24px rgba(42, 36, 31, 0.03)' 
+            }}
+          >
+            <h2 style={{ 
+              fontFamily: '"Playfair Display", Georgia, serif', 
+              fontSize: '28px', 
+              fontWeight: 700, 
+              color: '#2A241F', 
+              marginBottom: '28px',
+              position: 'relative' 
+            }}>
+              Send Us a Message
+              <div style={{ width: '40px', height: '2px', background: '#9E8D77', marginTop: '8px' }}></div>
+            </h2>
 
-          <motion.div {...fadeIn} style={{ background: 'var(--bg-card)', padding: '48px', borderRadius: '32px', boxShadow: 'var(--shadow-lg)', border: '1px solid var(--border)' }}>
-            <h3 style={{ marginBottom: '32px' }}>Send a Message</h3>
-            <form style={{ display: 'flex', flexDirection: 'column', gap: '20px' }} onSubmit={handleContactSubmit}>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-                <div className="input-group">
-                  <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '700' }}>Name</label>
-                  <input 
-                    type="text" 
-                    placeholder="Your Name" 
-                    required
-                    value={contactForm.name}
-                    onChange={(e) => setContactForm({...contactForm, name: e.target.value})}
-                    style={{ width: '100%', padding: '14px', borderRadius: '12px', border: '1px solid var(--border)', background: 'var(--bg-subtle)', color: 'var(--text-main)' }} 
-                  />
-                </div>
-                <div className="input-group">
-                  <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '700' }}>Email</label>
-                  <input 
-                    type="email" 
-                    placeholder="Your Email" 
-                    required
-                    value={contactForm.email}
-                    onChange={(e) => setContactForm({...contactForm, email: e.target.value})}
-                    style={{ width: '100%', padding: '14px', borderRadius: '12px', border: '1px solid var(--border)', background: 'var(--bg-subtle)', color: 'var(--text-main)' }} 
-                  />
-                </div>
-              </div>
-              <div className="input-group">
-                <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '700' }}>School Name</label>
-                <input 
-                  type="text" 
-                  placeholder="Your School" 
-                  required
-                  value={contactForm.school}
-                  onChange={(e) => setContactForm({...contactForm, school: e.target.value})}
-                  style={{ width: '100%', padding: '14px', borderRadius: '12px', border: '1px solid var(--border)', background: 'var(--bg-subtle)', color: 'var(--text-main)' }} 
-                />
-              </div>
-              <div className="input-group">
-                <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px', fontWeight: '700' }}>Message</label>
-                <textarea 
-                  rows="4" 
-                  placeholder="How can we help you?" 
-                  required
-                  value={contactForm.message}
-                  onChange={(e) => setContactForm({...contactForm, message: e.target.value})}
-                  style={{ width: '100%', padding: '14px', borderRadius: '12px', border: '1px solid var(--border)', background: 'var(--bg-subtle)', color: 'var(--text-main)', resize: 'none' }}
-                ></textarea>
-              </div>
-              <button className="btn btn-primary" style={{ padding: '16px' }} disabled={isSubmitting}>
-                {isSubmitting ? 'Sending...' : 'Send Message'}
-              </button>
+            <form style={{ display: 'flex', flexDirection: 'column', gap: '22px' }} onSubmit={handleContactSubmit}>
               
-              {submitStatus === 'success' && <p style={{ color: '#10b981', textAlign: 'center', fontWeight: '700' }}>✓ Message sent successfully!</p>}
-              {submitStatus === 'error' && <p style={{ color: '#ef4444', textAlign: 'center', fontWeight: '700' }}>✕ Failed to send. Please try again.</p>}
+              {/* Row 1: Full Name + Email Address */}
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+                <div>
+                  <label style={{ display: 'block', fontSize: '12px', fontWeight: 700, color: '#332D27', marginBottom: '8px' }}>
+                    Full Name <span style={{ color: '#A84E4E' }}>*</span>
+                  </label>
+                  <div style={{ position: 'relative' }}>
+                    <Users size={16} color="#B3A798" style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)' }} />
+                    <input 
+                      type="text" 
+                      placeholder="Enter your full name" 
+                      required
+                      value={contactForm.name}
+                      onChange={(e) => setContactForm({...contactForm, name: e.target.value})}
+                      style={{ 
+                        width: '100%', 
+                        padding: '12px 14px 12px 42px', 
+                        borderRadius: '12px', 
+                        border: '1px solid #E4DDD3', 
+                        background: '#FAF8F5', 
+                        fontSize: '14px',
+                        color: '#2A241F',
+                        outline: 'none'
+                      }} 
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label style={{ display: 'block', fontSize: '12px', fontWeight: 700, color: '#332D27', marginBottom: '8px' }}>
+                    Email Address <span style={{ color: '#A84E4E' }}>*</span>
+                  </label>
+                  <div style={{ position: 'relative' }}>
+                    <Mail size={16} color="#B3A798" style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)' }} />
+                    <input 
+                      type="email" 
+                      placeholder="Enter your email" 
+                      required
+                      value={contactForm.email}
+                      onChange={(e) => setContactForm({...contactForm, email: e.target.value})}
+                      style={{ 
+                        width: '100%', 
+                        padding: '12px 14px 12px 42px', 
+                        borderRadius: '12px', 
+                        border: '1px solid #E4DDD3', 
+                        background: '#FAF8F5', 
+                        fontSize: '14px',
+                        color: '#2A241F',
+                        outline: 'none'
+                      }} 
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Row 2: Phone Number + Subject */}
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+                <div>
+                  <label style={{ display: 'block', fontSize: '12px', fontWeight: 700, color: '#332D27', marginBottom: '8px' }}>
+                    Phone Number
+                  </label>
+                  <div style={{ position: 'relative' }}>
+                    <MessageSquare size={16} color="#B3A798" style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)' }} />
+                    <input 
+                      type="tel" 
+                      placeholder="Enter your phone number" 
+                      value={contactForm.school}
+                      onChange={(e) => setContactForm({...contactForm, school: e.target.value})}
+                      style={{ 
+                        width: '100%', 
+                        padding: '12px 14px 12px 42px', 
+                        borderRadius: '12px', 
+                        border: '1px solid #E4DDD3', 
+                        background: '#FAF8F5', 
+                        fontSize: '14px',
+                        color: '#2A241F',
+                        outline: 'none'
+                      }} 
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label style={{ display: 'block', fontSize: '12px', fontWeight: 700, color: '#332D27', marginBottom: '8px' }}>
+                    Subject <span style={{ color: '#A84E4E' }}>*</span>
+                  </label>
+                  <div style={{ position: 'relative' }}>
+                    <Lightbulb size={16} color="#B3A798" style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)' }} />
+                    <select 
+                      required
+                      style={{ 
+                        width: '100%', 
+                        padding: '12px 14px 12px 42px', 
+                        borderRadius: '12px', 
+                        border: '1px solid #E4DDD3', 
+                        background: '#FAF8F5', 
+                        fontSize: '14px',
+                        color: '#6B6155',
+                        outline: 'none',
+                        appearance: 'none'
+                      }}
+                    >
+                      <option value="">Select a subject</option>
+                      <option value="school">School Program Inquiry</option>
+                      <option value="workshop">Host Workshop</option>
+                      <option value="partner">Partnership Opportunity</option>
+                      <option value="general">General Support</option>
+                    </select>
+                    <ChevronDown size={16} color="#B3A798" style={{ position: 'absolute', right: '16px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }} />
+                  </div>
+                </div>
+              </div>
+
+              {/* Row 3: Message Textarea */}
+              <div>
+                <label style={{ display: 'block', fontSize: '12px', fontWeight: 700, color: '#332D27', marginBottom: '8px' }}>
+                  Message <span style={{ color: '#A84E4E' }}>*</span>
+                </label>
+                <div style={{ position: 'relative' }}>
+                  <MessageCircle size={16} color="#B3A798" style={{ position: 'absolute', left: '16px', top: '16px' }} />
+                  <textarea 
+                    rows="4" 
+                    placeholder="Type your message here..." 
+                    required
+                    value={contactForm.message}
+                    onChange={(e) => setContactForm({...contactForm, message: e.target.value})}
+                    style={{ 
+                      width: '100%', 
+                      padding: '14px 14px 14px 42px', 
+                      borderRadius: '12px', 
+                      border: '1px solid #E4DDD3', 
+                      background: '#FAF8F5', 
+                      fontSize: '14px',
+                      color: '#2A241F',
+                      resize: 'none',
+                      outline: 'none'
+                    }}
+                  ></textarea>
+                </div>
+              </div>
+
+              {/* Bottom Action Row: Dark Send Button + Privacy Note */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginTop: '8px' }}>
+                <motion.button 
+                  className="btn" 
+                  disabled={isSubmitting}
+                  whileHover={{ scale: 1.04, y: -2 }}
+                  whileTap={{ scale: 0.96 }}
+                  style={{ 
+                    padding: '14px 32px', 
+                    borderRadius: '10px',
+                    background: '#2A241F', 
+                    color: '#F9F7F2', 
+                    fontSize: '14px', 
+                    fontWeight: 700,
+                    border: 'none',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '10px',
+                    cursor: 'pointer'
+                  }}
+                >
+                  <span>{isSubmitting ? 'Sending...' : 'Send Message'}</span>
+                  <Rocket size={14} />
+                </motion.button>
+
+                <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11px', color: '#8A7D6E' }}>
+                  <ShieldCheck size={14} color="#9E8D77" />
+                  <span>We respect your privacy. Your information is safe with us.</span>
+                </div>
+              </div>
+
+              {submitStatus === 'success' && <p style={{ color: '#4A6B53', fontWeight: '700', fontSize: '13px' }}>✓ Message sent successfully!</p>}
+              {submitStatus === 'error' && <p style={{ color: '#A84E4E', fontWeight: '700', fontSize: '13px' }}>✕ Failed to send. Please try again.</p>}
+
             </form>
           </motion.div>
+
+          {/* RIGHT PANEL: Get in Touch Info Box */}
+          <motion.div 
+            {...fadeIn} 
+            transition={{ delay: 0.15 }}
+            style={{ 
+              background: '#F5F1EA', 
+              borderRadius: '24px', 
+              padding: '36px 32px', 
+              border: '1px solid #ECE4D8',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '28px'
+            }}
+          >
+            <h3 style={{ 
+              fontFamily: '"Playfair Display", Georgia, serif', 
+              fontSize: '24px', 
+              fontWeight: 700, 
+              color: '#2A241F',
+              marginBottom: '4px'
+            }}>
+              Get in Touch
+              <div style={{ width: '36px', height: '2px', background: '#9E8D77', marginTop: '6px' }}></div>
+            </h3>
+
+            {/* Location */}
+            <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+              <div style={{ 
+                width: '44px', 
+                height: '44px', 
+                borderRadius: '50%', 
+                background: '#EAE3D7', 
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center',
+                flexShrink: 0,
+                color: '#2A241F'
+              }}>
+                <MapPin size={20} />
+              </div>
+              <div>
+                <h4 style={{ fontSize: '14px', fontWeight: 800, color: '#2A241F', marginBottom: '4px' }}>Visit Our Office</h4>
+                <p style={{ fontSize: '13px', color: '#6B6155', lineHeight: '1.5' }}>
+                  AISI Head Office<br />
+                  2nd Floor, Innovation Hub, Guntur,<br />
+                  Andhra Pradesh - 522001, India
+                </p>
+              </div>
+            </div>
+
+            {/* Divider line */}
+            <div style={{ height: '1px', background: '#E5DDCF' }}></div>
+
+            {/* Call Us */}
+            <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+              <div style={{ 
+                width: '44px', 
+                height: '44px', 
+                borderRadius: '50%', 
+                background: '#EAE3D7', 
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center',
+                flexShrink: 0,
+                color: '#2A241F'
+              }}>
+                <Radio size={20} />
+              </div>
+              <div>
+                <h4 style={{ fontSize: '14px', fontWeight: 800, color: '#2A241F', marginBottom: '4px' }}>Call Us / WhatsApp</h4>
+                <p style={{ fontSize: '13px', color: '#2A241F', fontWeight: 700, margin: '0 0 2px' }}>+91 86390 83094</p>
+                <p style={{ fontSize: '12px', color: '#8A7D6E' }}>Mon - Sat: 9:00 AM - 6:00 PM</p>
+              </div>
+            </div>
+
+            {/* Divider line */}
+            <div style={{ height: '1px', background: '#E5DDCF' }}></div>
+
+            {/* Email Us */}
+            <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+              <div style={{ 
+                width: '44px', 
+                height: '44px', 
+                borderRadius: '50%', 
+                background: '#EAE3D7', 
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center',
+                flexShrink: 0,
+                color: '#2A241F'
+              }}>
+                <Mail size={20} />
+              </div>
+              <div>
+                <h4 style={{ fontSize: '14px', fontWeight: 800, color: '#2A241F', marginBottom: '4px' }}>Email Us</h4>
+                <p style={{ fontSize: '13px', color: '#2A241F', fontWeight: 700, margin: '0 0 2px' }}>info@aisiindia.org</p>
+                <p style={{ fontSize: '12px', color: '#8A7D6E' }}>We reply within 24 hours</p>
+              </div>
+            </div>
+
+            {/* Divider line */}
+            <div style={{ height: '1px', background: '#E5DDCF' }}></div>
+
+            {/* Follow Us */}
+            <div>
+              <h4 style={{ fontSize: '14px', fontWeight: 800, color: '#2A241F', marginBottom: '12px' }}>Follow Us</h4>
+              <div style={{ display: 'flex', gap: '10px' }}>
+                {[
+                  { icon: <Linkedin size={16} />, href: "#" },
+                  { icon: <Youtube size={16} />, href: "#" },
+                  { icon: <Instagram size={16} />, href: "#" },
+                  { icon: <Twitter size={16} />, href: "#" }
+                ].map((s, idx) => (
+                  <a 
+                    key={idx}
+                    href={s.href}
+                    style={{ 
+                      width: '36px', 
+                      height: '36px', 
+                      borderRadius: '50%', 
+                      background: '#2A241F', 
+                      color: '#F9F7F2', 
+                      display: 'flex', 
+                      alignItems: 'center', 
+                      justifyContent: 'center',
+                      textDecoration: 'none',
+                      transition: 'all 0.3s ease'
+                    }}
+                  >
+                    {s.icon}
+                  </a>
+                ))}
+              </div>
+            </div>
+
+          </motion.div>
+
         </div>
-        
-        <div style={{ textAlign: 'center', marginTop: '80px' }}>
-          <button className="btn btn-outline" onClick={() => navigateTo('home')}>
-            <ArrowLeft size={20} style={{ marginRight: '8px' }} /> Back to Home
-          </button>
-        </div>
+
+        {/* BOTTOM HORIZONTAL RECOGNITION HIGHLIGHTS BAR */}
+        <motion.div 
+          {...fadeIn} 
+          style={{ 
+            marginTop: '48px', 
+            background: '#FFFFFF', 
+            borderRadius: '20px', 
+            padding: '24px 36px', 
+            border: '1px solid #ECE7DF', 
+            boxShadow: '0 2px 16px rgba(42, 36, 31, 0.03)',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(4, 1fr)',
+            gap: '24px',
+            alignItems: 'center'
+          }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+            <div style={{ width: '40px', height: '40px', borderRadius: '12px', background: '#FAF8F5', border: '1px solid #ECE7DF', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#9E8D77' }}>
+              <ShieldCheck size={22} />
+            </div>
+            <div>
+              <h5 style={{ fontSize: '13px', fontWeight: 800, color: '#2A241F', margin: 0 }}>Govt. Recognized</h5>
+              <p style={{ fontSize: '11px', color: '#8A7D6E', margin: '2px 0 0' }}>Aligned with national skill standards</p>
+            </div>
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', borderLeft: '1px solid #ECE7DF', paddingLeft: '24px' }}>
+            <div style={{ width: '40px', height: '40px', borderRadius: '12px', background: '#FAF8F5', border: '1px solid #ECE7DF', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#9E8D77' }}>
+              <Users size={22} />
+            </div>
+            <div>
+              <h5 style={{ fontSize: '13px', fontWeight: 800, color: '#2A241F', margin: 0 }}>25,000+ Students</h5>
+              <p style={{ fontSize: '11px', color: '#8A7D6E', margin: '2px 0 0' }}>Empowered across India</p>
+            </div>
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', borderLeft: '1px solid #ECE7DF', paddingLeft: '24px' }}>
+            <div style={{ width: '40px', height: '40px', borderRadius: '12px', background: '#FAF8F5', border: '1px solid #ECE7DF', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#9E8D77' }}>
+              <GraduationCap size={22} />
+            </div>
+            <div>
+              <h5 style={{ fontSize: '13px', fontWeight: 800, color: '#2A241F', margin: 0 }}>12+ Programs</h5>
+              <p style={{ fontSize: '11px', color: '#8A7D6E', margin: '2px 0 0' }}>Industry relevant AI & Tech</p>
+            </div>
+          </div>
+
+          <div style={{ display: 'flex', alignItems: 'center', gap: '14px', borderLeft: '1px solid #ECE7DF', paddingLeft: '24px' }}>
+            <div style={{ width: '40px', height: '40px', borderRadius: '12px', background: '#FAF8F5', border: '1px solid #ECE7DF', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#9E8D77' }}>
+              <Radio size={22} />
+            </div>
+            <div>
+              <h5 style={{ fontSize: '13px', fontWeight: 800, color: '#2A241F', margin: 0 }}>Quick Support</h5>
+              <p style={{ fontSize: '11px', color: '#8A7D6E', margin: '2px 0 0' }}>We're here to help you succeed</p>
+            </div>
+          </div>
+        </motion.div>
+
       </section>
     </div>
   );
@@ -3116,22 +4378,20 @@ function App() {
   const renderRecognitionsPage = () => (
     <div className="recognitions-page">
       <section className="page-hero" style={{
-        background: 'linear-gradient(135deg, rgba(30, 64, 175, 0.7) 0%, rgba(37, 99, 235, 0.65) 50%, rgba(79, 70, 229, 0.65) 100%), url(https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1600&q=80)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        color: 'white',
+        position: 'relative',
+        overflow: 'hidden',
+        color: '#F9F7F2',
         padding: '120px 0',
         textAlign: 'center',
-        position: 'relative',
-        overflow: 'hidden'
+        borderBottom: '1px solid var(--border)'
       }}>
-        <div className="hero-blob" style={{ background: 'rgba(255,255,255,0.08)', top: '-40%', left: '15%' }}></div>
-        <div className="hero-blob" style={{ background: 'rgba(255,255,255,0.05)', top: '20%', right: '-10%' }}></div>
-        <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'url(https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1600&q=80)', backgroundSize: 'cover', backgroundPosition: 'center', filter: 'brightness(0.68) contrast(1.15)', zIndex: 0 }}></div>
+        <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(135deg, rgba(35, 29, 25, 0.75) 0%, rgba(51, 45, 39, 0.5) 50%, rgba(20, 16, 14, 0.85) 100%)', zIndex: 1 }}></div>
+        <div className="container" style={{ position: 'relative', zIndex: 2 }}>
           <motion.div {...fadeIn}>
-            <span style={{ textTransform: 'uppercase', letterSpacing: '3px', fontSize: '14px', fontWeight: '800', opacity: 0.8 }}>Our Credentials</span>
-            <h1 style={{ fontSize: '52px', margin: '16px 0', lineHeight: '1.1' }}>Recognitions & Accreditations</h1>
-            <p style={{ fontSize: '20px', maxWidth: '700px', margin: '0 auto', opacity: 0.9, lineHeight: '1.6' }}>
+            <span style={{ textTransform: 'uppercase', letterSpacing: '3px', fontSize: '13px', fontWeight: '800', color: '#BAA892' }}>Our Credentials</span>
+            <h1 style={{ fontSize: '52px', fontWeight: 900, margin: '16px 0', lineHeight: '1.1', color: '#F9F7F2', textShadow: '0 2px 12px rgba(0,0,0,0.8)' }}>Recognitions & Accreditations</h1>
+            <p style={{ fontSize: '19px', color: '#EFEBE4', maxWidth: '750px', margin: '0 auto', lineHeight: '1.75', textShadow: '0 2px 8px rgba(0,0,0,0.7)' }}>
               AISI is recognized and aligned with India's most prestigious government bodies and national skill development frameworks.
             </p>
           </motion.div>
@@ -3164,7 +4424,7 @@ function App() {
                 {/* Card Image Header */}
                 <div style={{
                   height: '180px',
-                  background: `linear-gradient(135deg, rgba(30, 64, 175, 0.85) 0%, rgba(79, 70, 229, 0.85) 100%), url(${rec.bgImage}) center/cover no-repeat`,
+                  background: `linear-gradient(135deg, rgba(51, 45, 39, 0.95) 0%, rgba(36, 31, 26, 0.9) 100%)`,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
@@ -3254,16 +4514,14 @@ function App() {
       <div className="recognition-detail-page">
         {/* Hero Section */}
         <section className="page-hero" style={{
-          background: `linear-gradient(135deg, rgba(30, 64, 175, 0.7) 0%, rgba(79, 70, 229, 0.65) 100%), url(${rec.bgImage})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          color: 'white',
-          padding: '120px 0',
+          background: 'radial-gradient(circle at 50% 30%, rgba(186, 168, 146, 0.15) 0%, transparent 60%), linear-gradient(135deg, #2A241F 0%, #1A1613 100%)',
+          color: '#F9F7F2',
+          padding: '100px 0',
           textAlign: 'center',
           position: 'relative',
-          overflow: 'hidden'
+          overflow: 'hidden',
+          borderBottom: '1px solid var(--border)'
         }}>
-          <div className="hero-blob" style={{ background: 'rgba(255,255,255,0.08)', top: '-50%', left: '20%' }}></div>
           <div className="container" style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <motion.div
               initial={{ scale: 0.8, opacity: 0 }}
@@ -3279,16 +4537,16 @@ function App() {
                 justifyContent: 'center',
                 marginBottom: '32px',
                 boxShadow: '0 20px 60px rgba(0,0,0,0.3)',
-                border: '6px solid rgba(255,255,255,0.2)'
+                border: '6px solid rgba(186, 168, 146, 0.3)'
               }}
             >
               <img src={rec.logo} alt={rec.title} style={{ height: '65px', maxWidth: '85px', objectFit: 'contain' }} />
             </motion.div>
-            <motion.span {...fadeIn} style={{ background: 'rgba(255,255,255,0.15)', backdropFilter: 'blur(10px)', padding: '8px 20px', borderRadius: '50px', fontSize: '12px', fontWeight: '800', letterSpacing: '1px', marginBottom: '20px', border: '1px solid rgba(255,255,255,0.2)' }}>
+            <motion.span {...fadeIn} style={{ background: 'rgba(186, 168, 146, 0.18)', padding: '8px 20px', borderRadius: '50px', fontSize: '12px', fontWeight: '800', letterSpacing: '1px', marginBottom: '20px', border: '1px solid rgba(186, 168, 146, 0.3)', color: '#BAA892' }}>
               {rec.badge}
             </motion.span>
-            <motion.h1 {...fadeIn} style={{ fontSize: '52px', marginBottom: '16px', lineHeight: '1.1' }}>{rec.title}</motion.h1>
-            <motion.p {...fadeIn} style={{ fontSize: '18px', opacity: 0.9, maxWidth: '600px' }}>{rec.subtitle}</motion.p>
+            <motion.h1 {...fadeIn} style={{ fontSize: '52px', fontWeight: 900, marginBottom: '16px', lineHeight: '1.1', color: '#F9F7F2', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>{rec.title}</motion.h1>
+            <motion.p {...fadeIn} style={{ fontSize: '19px', color: '#EFEBE4', maxWidth: '600px', lineHeight: '1.7' }}>{rec.subtitle}</motion.p>
           </div>
         </section>
 
@@ -3507,6 +4765,160 @@ function App() {
         </motion.main>
       </AnimatePresence>
 
+      {/* ===== ADMIN LEADS & EXCEL SHEET MODAL ===== */}
+      {showAdminLeadsModal && (
+        <div style={{
+          position: 'fixed',
+          inset: 0,
+          background: 'rgba(0,0,0,0.65)',
+          backdropFilter: 'blur(8px)',
+          zIndex: 9999,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          padding: '20px'
+        }}>
+          <motion.div
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            style={{
+              background: 'var(--bg-card)',
+              border: '2px solid var(--border-strong)',
+              borderRadius: '28px',
+              padding: '32px',
+              maxWidth: '900px',
+              width: '100%',
+              maxHeight: '85vh',
+              overflowY: 'auto',
+              boxShadow: '0 25px 60px rgba(0,0,0,0.3)',
+              position: 'relative'
+            }}
+          >
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
+              <div>
+                <h2 style={{ fontSize: '24px', fontWeight: 900, color: 'var(--navy)', margin: 0 }}>
+                  📊 User Submissions & Excel Sheet Leads
+                </h2>
+                <p style={{ fontSize: '13px', color: 'var(--text-dim)', margin: '4px 0 0' }}>
+                  Auto-updated whenever users submit contact forms, workshop requests, or newsletter subscriptions.
+                </p>
+              </div>
+              <button
+                onClick={() => setShowAdminLeadsModal(false)}
+                style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--navy)' }}
+              >
+                <X size={24} />
+              </button>
+            </div>
+
+            {/* Excel Download CTA */}
+            <div style={{ display: 'flex', gap: '16px', marginBottom: '24px', flexWrap: 'wrap' }}>
+              <a
+                href={`${API_BASE_URL}/api/admin/export-sheet`}
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  padding: '12px 24px',
+                  background: 'linear-gradient(135deg, #332D27 0%, #241F1A 100%)',
+                  color: '#F9F7F2',
+                  borderRadius: '50px',
+                  fontWeight: 800,
+                  fontSize: '14px',
+                  textDecoration: 'none',
+                  border: '1px solid #BAA892',
+                  boxShadow: '0 6px 20px rgba(51, 45, 39, 0.3)'
+                }}
+              >
+                <BarChart3 size={18} />
+                <span>📥 Download Excel CSV Sheet</span>
+              </a>
+
+              <button
+                onClick={fetchAdminLeads}
+                style={{
+                  padding: '12px 24px',
+                  borderRadius: '50px',
+                  border: '1px solid var(--border-strong)',
+                  background: 'var(--bg-subtle)',
+                  color: 'var(--navy)',
+                  fontWeight: 700,
+                  fontSize: '14px',
+                  cursor: 'pointer'
+                }}
+              >
+                🔄 Refresh Live Leads
+              </button>
+            </div>
+
+            {/* Table View of Submissions */}
+            {loadingAdminLeads ? (
+              <p style={{ textAlign: 'center', padding: '30px' }}>Loading latest leads...</p>
+            ) : adminLeadsData.length === 0 ? (
+              <div style={{ padding: '30px', textAlign: 'center', color: 'var(--text-dim)', background: 'var(--bg-subtle)', borderRadius: '16px' }}>
+                No user submissions recorded yet. Try submitting a test inquiry or workshop request on the site!
+              </div>
+            ) : (
+              <div style={{ overflowX: 'auto' }}>
+                <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '13px', textAlign: 'left' }}>
+                  <thead>
+                    <tr style={{ background: 'var(--primary)', color: '#F9F7F2' }}>
+                      <th style={{ padding: '12px 14px', borderRadius: '10px 0 0 0' }}>Type</th>
+                      <th style={{ padding: '12px 14px' }}>Name / School</th>
+                      <th style={{ padding: '12px 14px' }}>Email</th>
+                      <th style={{ padding: '12px 14px' }}>Phone / City</th>
+                      <th style={{ padding: '12px 14px', borderRadius: '0 10px 0 0' }}>Message / Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {adminLeadsData.map((lead, lIdx) => (
+                      <tr key={lIdx} style={{ borderBottom: '1px solid var(--border)', background: lIdx % 2 === 0 ? 'transparent' : 'var(--bg-subtle)' }}>
+                        <td style={{ padding: '10px 14px', fontWeight: 800, color: 'var(--primary)' }}>{lead.type}</td>
+                        <td style={{ padding: '10px 14px', fontWeight: 700 }}>{lead.name || lead.schoolName || 'Subscriber'}</td>
+                        <td style={{ padding: '10px 14px' }}>{lead.email || 'N/A'}</td>
+                        <td style={{ padding: '10px 14px' }}>{lead.contactNumber || lead.school || lead.city || 'N/A'}</td>
+                        <td style={{ padding: '10px 14px', color: 'var(--text-dim)' }}>{lead.message || lead.notes || 'N/A'}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+          </motion.div>
+        </div>
+      )}
+
+      {/* Floating WhatsApp Instant Contact Button */}
+      <motion.a
+        href="https://wa.me/918639083094?text=Hello%20AISI%20Team%2C%20I%20want%20to%20know%20more%20about%20your%20AI%20curriculum%20and%20school%20workshops!"
+        target="_blank"
+        rel="noreferrer"
+        whileHover={{ scale: 1.15, rotate: 5 }}
+        whileTap={{ scale: 0.9 }}
+        style={{
+          position: 'fixed',
+          bottom: '28px',
+          right: '28px',
+          width: '60px',
+          height: '60px',
+          borderRadius: '50%',
+          background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
+          color: '#ffffff',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          boxShadow: '0 8px 30px rgba(37, 211, 102, 0.45)',
+          zIndex: 9999,
+          cursor: 'pointer',
+          border: '2px solid rgba(255, 255, 255, 0.4)'
+        }}
+        title="Chat on WhatsApp with AISI Team"
+      >
+        <MessageCircle size={32} />
+      </motion.a>
+
       <footer>
         <div className="container">
           <div className="footer-main">
@@ -3566,175 +4978,5 @@ function App() {
     </div>
   );
 }
-
-// Data for team members
-const teamData = {
-  sampath: {
-    name: "Lingala Sampath Kumar",
-    role: "FOUNDER, AISI",
-    gender: "male",
-    img: sampathImg,
-    bio: "Dedicated to democratizing AI education and bringing world-class curriculum to every student in India.",
-    fullBio: "Coming Soon: Detailed biography and vision for AISI.",
-    highlights: ["10+ Years in Tech", "AI Evangelist", "Education Reformer"]
-  },
-  tarun: {
-    name: "Velluri Tarun Shetty",
-    role: "CEO, STRINT TECHNOLOGIES | STRATEGIC PARTNER, AISI",
-    gender: "male",
-    img: tarunImg,
-    profileLink: "https://tarunshetty.strinttechnologies.com",
-    bio: "Leading the technology and infrastructure to make interactive AI learning accessible anywhere. As CEO of Strint Technologies, Tarun drives strategic innovation and industry partnerships.",
-    fullBio: "Velluri Tarun Shetty is the CEO of Strint Technologies and a strategic partner of AISI, committed to empowering young minds with future-ready AI skills to innovate, create, and lead in the digital world.",
-    highlights: ["CEO, Strint Technologies", "Tech Visionary", "Strategic Partner"]
-  },
-  avinash: {
-    name: "Avinash",
-    role: "AI MENTOR",
-    gender: "male",
-    img: avinashImg,
-    bio: "Guiding students through hands-on practical sessions and complex algorithm implementations.",
-    fullBio: "Coming Soon: Deep dive into AI mentorship and student success stories.",
-    highlights: ["Algorithm Expert", "Student Mentor", "AI Researcher"]
-  },
-  chandana: {
-    name: "Lingala Chandana",
-    role: "ML TRAINER",
-    gender: "female",
-    img: chandanaImg,
-    bio: "Empowering the next generation of innovators by simplifying complex Machine Learning concepts into practical, hands-on learning experiences.",
-    fullBio: "Coming Soon: Journey in Machine Learning and training methodologies.",
-    highlights: ["ML Specialist", "Curriculum Design", "Practical Trainer"]
-  }
-};
-
-// Data for recognitions
-const recognitionsData = {
-  nip: {
-    title: "National Internship Portal",
-    subtitle: "Ministry of Education, Govt. of India Partnership",
-    logo: nipLogo,
-    badge: "Government Portal Alignment",
-    bgImage: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1600&q=80",
-    description: "AISI is integrated with the National Internship Portal of India to offer verified AI internships to K-12 and collegiate students. This ensures that the practical projects completed by our students are officially recognized and contribute to their academic and career profiles.",
-    howItWorks: [
-      { step: "01", title: "Enroll in AISI Programs", desc: "Students complete advanced AI modules (Neural Builder, System Innovator) and build their practical lab portfolios." },
-      { step: "02", title: "Portal Registration", desc: "Eligible students are registered on the National Internship Portal with their AISI verified credentials." },
-      { step: "03", title: "Match with Industry", desc: "Students are matched with official internship listings from tech partners and organizations under government guidelines." },
-      { step: "04", title: "Verified Certification", desc: "Upon successful completion, students receive a government-recognized internship certificate that boosts college admissions." }
-    ],
-    features: [
-      "Direct link with Ministry of Education systems",
-      "Verified digital portfolio submission",
-      "Access to corporate AI internships",
-      "Official credit weightage for academic profiles"
-    ],
-    stats: {
-      interns: "5,200+ Placed",
-      rating: "4.9/5",
-      partners: "120+ Companies"
-    }
-  },
-  nsdc: {
-    title: "NSDC Accreditation",
-    subtitle: "National Skill Development Corporation Alignment",
-    logo: nsdcLogo,
-    badge: "Skill India Alignment",
-    bgImage: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80",
-    description: "Our curriculum is aligned with the National Occupational Standards (NOS) set by the National Skill Development Corporation. This ensures that every student builds vocational skillsets that are directly mapped to India's national skill registry.",
-    howItWorks: [
-      { step: "01", title: "Skill Standard Mapping", desc: "Every AISI unit is mapped against NSDC's IT-ITeS sector skill council guidelines for artificial intelligence." },
-      { step: "02", title: "Assessment Verification", desc: "Practical skill tests and final capstones are graded using national assessment frameworks." },
-      { step: "03", title: "National Registry Listing", desc: "Certified AISI innovators get listed in the national skill repository, giving them a distinct advantage." },
-      { step: "04", title: "Industry Recognition", desc: "Corporate HR departments instantly recognize NSDC-aligned credentials, streamlining job and internship placement." }
-    ],
-    features: [
-      "Alignment with IT-ITeS Sector Skill Council",
-      "National Skill Registry integration",
-      "Assessment based on Occupational Standards",
-      "Industry-verified learning outcomes"
-    ],
-    stats: {
-      interns: "15,000+ Skilled",
-      rating: "4.8/5",
-      partners: "50+ Skill Hubs"
-    }
-  },
-  aicte: {
-    title: "AICTE Integration",
-    subtitle: "All India Council for Technical Education Guidelines",
-    logo: aicteLogo,
-    badge: "Technical Education Standards",
-    bgImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1600&q=80",
-    description: "AISI works in close alignment with AICTE guidelines for technical and computing education. Our programs adopt AICTE's model curricula structures, ensuring K-12 students transition seamlessly into higher engineering and technology courses.",
-    howItWorks: [
-      { step: "01", title: "Model Curriculum Adoption", desc: "Our lessons borrow pedagogical frameworks from AICTE’s high-tech curriculum guidelines." },
-      { step: "02", title: "Collaborative Labs", desc: "Students work in digital labs utilizing open-source technical libraries approved by the council." },
-      { step: "03", title: "Technical Assessments", desc: "Skill tests simulate standard engineering/technical examinations, raising analytical competence." },
-      { step: "04", title: "Higher Education Leap", desc: "Graduates possess structural knowledge that aligns perfectly with top tier AICTE-approved engineering institutions." }
-    ],
-    features: [
-      "AICTE model curriculum alignment",
-      "Hands-on coding labs using open standards",
-      "Focus on engineering and problem-solving pedagogy",
-      "Pathways to higher technical education"
-    ],
-    stats: {
-      interns: "8,500+ Qualified",
-      rating: "5.0/5",
-      partners: "40+ Tech Colleges"
-    }
-  },
-  msme: {
-    title: "MSME Alignment",
-    subtitle: "Ministry of Micro, Small & Medium Enterprises",
-    logo: msmeLogo,
-    badge: "Enterprise & Innovation",
-    bgImage: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1600&q=80",
-    description: "We encourage entrepreneurial thinking. Our integration with MSME standards supports student innovators in launching micro-startups, registering their intellectual properties, and obtaining support under central entrepreneurship schemes.",
-    howItWorks: [
-      { step: "01", title: "Ideation & Capstones", desc: "Students design practical AI applications targeting local problems under MSME guidelines." },
-      { step: "02", title: "Startup Mentorship", desc: "AISI mentors guide student teams to convert prototype projects into small enterprise models." },
-      { step: "03", title: "Udyam Assist", desc: "We support advanced student teams in registering under Udyam (MSME) to access government incubation benefits." },
-      { step: "04", title: "Funding & Showcases", desc: "Outstanding student startups get showcased at central MSME expos for incubation and funding opportunities." }
-    ],
-    features: [
-      "Incubation and startup guidance",
-      "IPR and patent awareness programs",
-      "Direct exposure to MSME development schemes",
-      "Support for registering student-led micro-enterprises"
-    ],
-    stats: {
-      interns: "120+ Prototypes",
-      rating: "4.9/5",
-      partners: "15+ Incubators"
-    }
-  },
-  skillindia: {
-    title: "Skill India",
-    subtitle: "Pradhan Mantri Kaushal Vikas Yojana Standards",
-    logo: skillIndiaLogo,
-    badge: "National Skilling Mission",
-    bgImage: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80",
-    description: "Aligning with the Prime Minister's vision for a skilled nation, AISI brings specialized digital skills directly to K-12 classrooms. Our certifications are part of the larger mission to make the youth of India self-reliant and future-ready.",
-    howItWorks: [
-      { step: "01", title: "Grassroots Skilling", desc: "Special bootcamps are held across schools in tier-2 and tier-3 towns to democratize digital education." },
-      { step: "02", title: "Verified Skills Assessment", desc: "Students go through practical coding assessments to prove their hands-on skills." },
-      { step: "03", title: "Skill India Digital Profile", desc: "Verified credentials are linked directly to student portfolios, visible to national employers." },
-      { step: "04", title: "Placement & Growth", desc: "Skilled youth gain access to the national job portal and localized skill development programs." }
-    ],
-    features: [
-      "Integration with Skill India Digital Mission",
-      "Focus on tier-2/3 school outreach",
-      "Self-reliance and vocational AI enablement",
-      "Verified skill credentials visible nationally"
-    ],
-    stats: {
-      interns: "25,000+ Enrolled",
-      rating: "4.8/5",
-      partners: "60+ Districts"
-    }
-  }
-};
 
 export default App;
